@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Page Title')
+@section('title', 'IT Rest Service')
 
 @section('content')
 
