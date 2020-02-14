@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,11 +12,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 
     <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
-
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i%7CMontserrat:400,400i,500,500i,600,600i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i%7CMontserrat:400,400i,500,500i,600,600i,700,700i&display=swap&subset=cyrillic"
+        rel="stylesheet">
     <link rel="stylesheet" href="{{asset('/css/app.css')}}">
 
+
+    <style>
+        .team-item-social-links a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+        }
+
+        .team-item-social-links a:hover {
+            color: #8d3e9e;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -35,7 +53,7 @@
         <header class="header">
             <!-- Begin header top -->
             <nav class="header-top">
-               @include("partials.header-top")
+                @include("partials.header-top")
             </nav><!-- End header top -->
             <!-- Begin header fixed -->
             <nav class="header-fixed">
@@ -59,7 +77,8 @@
                                     <img class="lazy logo-ico" src="img/logo.png" alt="" style="">
                                 </a>
                                 <div class="footer-company-desc">
-                                    <p>Our company has been developing high-quality and reliable software for corporate needs since 2008. We are renowned professionals of software development.</p>
+                                    <p>Our company has been developing high-quality and reliable software for corporate
+                                        needs since 2008. We are renowned professionals of software development.</p>
                                 </div>
                             </div>
                             <ul class="footer-social-links">
@@ -121,11 +140,13 @@
                 <!-- End hidden Field for send form -->
                 <div class="form-field">
                     <label for="popup-field-name" class="form-field-label">Your name</label>
-                    <input type="text" class="form-field-input" name="NameCallBack" value="" autocomplete="off" required="required" id="popup-field-name">
+                    <input type="text" class="form-field-input" name="NameCallBack" value="" autocomplete="off"
+                           required="required" id="popup-field-name">
                 </div>
                 <div class="form-field">
                     <label for="popup-field-phone" class="form-field-label">Your phone</label>
-                    <input type="tel" class="form-field-input mask-phone" name="PhoneCallBack" value="" autocomplete="off" required="required" id="popup-field-phone">
+                    <input type="tel" class="form-field-input mask-phone" name="PhoneCallBack" value=""
+                           autocomplete="off" required="required" id="popup-field-phone">
                 </div>
                 <div class="form-btn form-btn-wide">
                     <button type="submit" class="btn ripple">Waiting for a Сall</button>

@@ -7,14 +7,14 @@
     <div class="main-banner">
         <div class="main-banner-slider flickity-dots-absolute flickity-dots-white" data-flickity='{ "bgLazyLoad": 1, "bgLazyLoad": true, "fade": true, "prevNextButtons": false, "autoPlay": 7000, "pauseAutoPlayOnHover": false }'>
             <div class="main-banner-slider-item">
-                <div class="main-banner-item-img-right" data-flickity-bg-lazyload="https://softgroup.ua/sites/default/files/styles/480x320/public/DSC_1286.jpg?itok=r8TeQAyy"></div>
+                <div class="main-banner-item-img-right" data-flickity-bg-lazyload="{{asset("img/3.jpg")}}"></div>
                 <div class="container">
                     <div class="row">
                         <div class="col">
                             <div class="main-banner-box">
                                 <h1 class="main-banner-title">IT Проекты для вашего бизнеса!</h1>
                                 <div class="main-banner-desc">
-                                    <p>On this template you will be able to create a site for your business. The template has many different blocks from which you can create your own unique site.</p>
+                                    <p>Высококачественные специалисты в области веб и мобильной разработки. Мы воплотим в реальность все ваши технологичные мечты.</p>
                                 </div>
                                 <div class="main-banner-btns">
                                     <a href="{{route('timeline')}}" class="btn btn-widht-ico btn-small ripple">
@@ -32,14 +32,15 @@
                 </div>
             </div>
             <div class="main-banner-slider-item">
-                <div class="main-banner-item-img-right" data-flickity-bg-lazyload="https://egate.lv/wp-content/uploads/2015/12/IT-support.jpg"></div>
+                <div class="main-banner-item-img-right" data-flickity-bg-lazyload="{{asset("img/1.jpg")}}"></div>
                 <div class="container">
                     <div class="row">
                         <div class="col">
                             <div class="main-banner-box">
                                 <h2 class="main-banner-title">IT Solutions for Your Business</h2>
                                 <div class="main-banner-desc">
-                                    <p>Since our establishment, we have been delivering high-quality and sustainable software solutions for corporate business purposes.</p>
+                                    <p>
+                                        С момента нашего основания мы поставляем высококачественные и надежные программные решения для целей корпоративного бизнеса.</p>
                                 </div>
                                 <div class="main-banner-btns">
                                     <a href="#!" class="btn btn-widht-ico btn-small ripple">
@@ -57,7 +58,7 @@
                 </div>
             </div>
             <div class="main-banner-slider-item">
-                <div class="main-banner-item-img-right" data-flickity-bg-lazyload="https://mate.academy/static/cover.jpg"></div>
+                <div class="main-banner-item-img-right" data-flickity-bg-lazyload="{{asset("img/2.jpg")}}"></div>
                 <div class="container">
                     <div class="row">
                         <div class="col">

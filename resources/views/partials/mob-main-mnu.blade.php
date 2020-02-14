@@ -96,15 +96,15 @@
                 </div>
             </div>
         </li>
-        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="contact-us.html">Связь с нами</a></li>
     </ul>
 </div>
 <div class="mob-main-mnu-footer">
-    <ul class="mob-main-mnu-lang">
+   {{-- <ul class="mob-main-mnu-lang">
         <li class="active"><a href="#!"><span>En</span></a></li>
         <li><a href="#!"><span>Sp</span></a></li>
         <li><a href="#!"><span>It</span></a></li>
         <li><a href="#!"><span>Uk</span></a></li>
         <li><a href="#!"><span>Ru</span></a></li>
-    </ul>
+    </ul>--}}
 </div>

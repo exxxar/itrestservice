@@ -71,14 +71,14 @@
                         </div>
                         <ul class="header-navbar-content">
                             <li>
-                                <a href="mailto:mail@example.com">
+                                <a href="mailto:business@it-rest-service.ru">
                                     <i class="material-icons">email</i>
-                                    <span>mail@example.com</span>
+                                    <span>business@it-rest-service.ru</span>
                                 </a>
                             </li>
                             <li>
                                 <b>24/7 Support:</b>
-                                <a href="#!" class="formingHrefTel">1-888-777-1234</a>
+                                <a href="#!" class="formingHrefTel">+38 (071) 432-06-61</a>
                             </li>
                             <li>
                                 <a href="#сallback_popup" class="header-call-back-link сallback_popup_open">
@@ -87,7 +87,7 @@
                                 </a>
                             </li>
                             <li>
-                                <!-- Begin social links -->
+                               {{-- <!-- Begin social links -->
                                 <ul class="social-links">
                                     <li>
                                         <a href="#!" title="Facebook">
@@ -109,7 +109,7 @@
                                             <svg viewBox="0 0 512 512"><use xlink:href="img/sprite.svg#twitter-ico"></use></svg>
                                         </a>
                                     </li>
-                                </ul><!-- End social links -->
+                                </ul><!-- End social links -->--}}
                             </li>
                         </ul>
                     </div>

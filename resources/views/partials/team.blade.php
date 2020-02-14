@@ -19,23 +19,23 @@
                         <div class="team-item-position">Web-developer & Web-design </div>
                         <ul class="team-item-social-links team-item-social-links-relative">
                             <li>
-                                <a href="#!" title="Facebook">
+                                <a href="https://www.facebook.com/exxxar" target="_blank" title="Facebook">
                                     <svg viewBox="0 0 320 512"><use xlink:href="img/sprite.svg#facebook-ico"></use></svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="#!" title="Instagram">
+                                <a href="https://www.instagram.com/e.x.x.x.a.r" target="_blank" title="Instagram">
                                     <svg viewBox="0 0 448 512"><use xlink:href="img/sprite.svg#instagram-ico"></use></svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="#!" title="LinkedIn">
+                                <a href="https://ua.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D0%B3%D1%83%D0%BA%D0%B0%D0%B9-833800a9" target="_blank" title="LinkedIn">
                                     <svg viewBox="0 0 448 512"><use xlink:href="img/sprite.svg#linkedin-in-ico"></use></svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="#!" title="Twitter">
-                                    <svg viewBox="0 0 512 512"><use xlink:href="img/sprite.svg#twitter-ico"></use></svg>
+                                <a href="https://vk.com/exxxar" target="_blank" title="Vkontake">
+                                    <i class="fab fa-vk"></i>
                                 </a>
                             </li>
                         </ul>
@@ -118,7 +118,7 @@
                     </div>
                     <div class="team-item-info">
                         <h4 class="team-item-title item-title">Алёна</h4>
-                        <div class="team-item-position">Junior web-developer</div>
+                        <div class="team-item-position">Web-developer</div>
                         <ul class="team-item-social-links team-item-social-links-relative">
                             <li>
                                 <a href="#!" title="Facebook">
