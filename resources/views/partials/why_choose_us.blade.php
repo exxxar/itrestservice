@@ -6,7 +6,7 @@
             <div class="col-12">
                 <div class="wrapp-section-title section-title-center">
                     <div class="section-subtitle">some reasons</div>
-                    <h2 class="section-title">Why Choose Us</h2>
+                    <h2 class="section-title">Почему мы?</h2>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 item">
@@ -14,9 +14,9 @@
                 <div class="advantages-item advantages-item-bg">
                     <div class="advantages-item-count-large">01</div>
                     <div class="advantages-item-info">
-                        <h4 class="advantages-item-title">High Quality Hardware</h4>
+                        <h4 class="advantages-item-title">Эффективность</h4>
                         <div class="advantages-item-desc">
-                            <p>We use top-notch hardware to develop the most efficient apps for our customers</p>
+                            <p>Быстрая скорость обработки запроса и адекватные сроки выполнения</p>
                         </div>
                     </div>
                 </div><!-- End choose us item -->
@@ -26,9 +26,9 @@
                 <div class="advantages-item advantages-item-bg">
                     <div class="advantages-item-count-large">02</div>
                     <div class="advantages-item-info">
-                        <h4 class="advantages-item-title">Dedicated 24\7 Support</h4>
+                        <h4 class="advantages-item-title">Соответствие цена-качество</h4>
                         <div class="advantages-item-desc">
-                            <p>You can rely on our 24/7 tech support that will gladly solve any app issue you may have.</p>
+                            <p>Повышение эффективности сайтов при оптимальном соотношении цены и качества.</p>
                         </div>
                     </div>
                 </div><!-- End choose us item -->
@@ -38,9 +38,9 @@
                 <div class="advantages-item advantages-item-bg">
                     <div class="advantages-item-count-large">03</div>
                     <div class="advantages-item-info">
-                        <h4 class="advantages-item-title">30-Day Money-back Guarantee</h4>
+                        <h4 class="advantages-item-title">Поддержка 24/7</h4>
                         <div class="advantages-item-desc">
-                            <p>If you are not satisfied with our apps, we will return your money in the first 30 days.</p>
+                            <p>Для всех наших клиентов доступа оперативная техническая поддержка.</p>
                         </div>
                     </div>
                 </div><!-- End choose us item -->
@@ -50,9 +50,9 @@
                 <div class="advantages-item advantages-item-bg">
                     <div class="advantages-item-count-large">04</div>
                     <div class="advantages-item-info">
-                        <h4 class="advantages-item-title">Agile and Fast Working Style</h4>
+                        <h4 class="advantages-item-title">Быстрая разработка</h4>
                         <div class="advantages-item-desc">
-                            <p>This type of approach to our work helps our specialists to quickly develop better apps.</p>
+                            <p>Быстрая разработка по методологии Agile</p>
                         </div>
                     </div>
                 </div><!-- End choose us item -->
@@ -62,9 +62,9 @@
                 <div class="advantages-item advantages-item-bg">
                     <div class="advantages-item-count-large">05</div>
                     <div class="advantages-item-info">
-                        <h4 class="advantages-item-title">Some Apps <br> are Free</h4>
+                        <h4 class="advantages-item-title">Демо-версии проектов</h4>
                         <div class="advantages-item-desc">
-                            <p>We also develop free apps that can be downloaded online without any payments.</p>
+                            <p>Пробуй демо-версию проекта абсолютно бесплатно</p>
                         </div>
                     </div>
                 </div><!-- End choose us item -->
@@ -74,9 +74,9 @@
                 <div class="advantages-item advantages-item-bg">
                     <div class="advantages-item-count-large">06</div>
                     <div class="advantages-item-info">
-                        <h4 class="advantages-item-title">High Level of Usability</h4>
+                        <h4 class="advantages-item-title">Высокая производительность</h4>
                         <div class="advantages-item-desc">
-                            <p>All our products have high usability allowing users to easily operate the apps.</p>
+                            <p>Все наши продукты имеют высокую практичность, что позволяет пользователям легко управлять приложениями.</p>
                         </div>
                     </div>
                 </div><!-- End choose us item -->

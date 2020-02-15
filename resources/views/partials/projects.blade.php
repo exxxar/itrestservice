@@ -18,7 +18,7 @@
                     </div>
                     <div class="project-item-card project-item-card-back">
                         <div class="project-item-card-center">
-                            <h5 class="project-item-title">MPlanner</h5>
+                            <h5 class="project-item-title">Iva Med</h5>
                             <div class="project-item-desc">
                                 <p>We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
                             </div>

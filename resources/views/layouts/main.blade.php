@@ -35,6 +35,16 @@
             color: #8d3e9e;
         }
 
+        .form-p p {
+            margin-top:10px;
+            font-size:12px;
+
+        }
+
+        .form-p p strong {
+            font-family: 'Arial';
+            font-weight: 800;
+        }
     </style>
 </head>
 
@@ -77,8 +87,11 @@
                                     <img class="lazy logo-ico" src="img/logo.png" alt="" style="">
                                 </a>
                                 <div class="footer-company-desc">
-                                    <p>Our company has been developing high-quality and reliable software for corporate
-                                        needs since 2008. We are renowned professionals of software development.</p>
+                                    <p>Мы собрали большой штат высокоэффективных сотрудников, которые могут реализовать
+                                        проект любой сложности и окажут полный комплекс услуг.
+                                        Наша компания заинтересована в том, чтобы удовлетворить потребности каждого
+                                        клиента.
+                                    </p>
                                 </div>
                             </div>
                             <ul class="footer-social-links">
@@ -133,23 +146,27 @@
 <div id="сallback_popup" class="popup_style popup_style_sally open_popup" style="display:none;">
     <div class="popup">
         <div class="popup_content">
-            <h4 class="popup_title">We will call you</h4>
+            <h4 class="popup_title">Мы перезвоним Вам!</h4>
             <form action="#!" method="post" class="сallback_popup_form">
                 <!-- Begin hidden Field for send form -->
                 <input type="hidden" name="form_subject" value="Pop up form">
                 <!-- End hidden Field for send form -->
                 <div class="form-field">
-                    <label for="popup-field-name" class="form-field-label">Your name</label>
+                    <label for="popup-field-name" class="form-field-label">Ваше имя</label>
                     <input type="text" class="form-field-input" name="NameCallBack" value="" autocomplete="off"
                            required="required" id="popup-field-name">
                 </div>
                 <div class="form-field">
-                    <label for="popup-field-phone" class="form-field-label">Your phone</label>
+                    <label for="popup-field-phone" class="form-field-label">Ваш номер телефона</label>
                     <input type="tel" class="form-field-input mask-phone" name="PhoneCallBack" value=""
                            autocomplete="off" required="required" id="popup-field-phone">
                 </div>
                 <div class="form-btn form-btn-wide">
-                    <button type="submit" class="btn ripple">Waiting for a Сall</button>
+                    <button type="submit" class="btn ripple">Заказать звонок</button>
+
+                </div>
+                <div class="form-field form-p">
+                    <p><em>Ожидайте звонок в течении <strong>10</strong> минут.</em></p>
                 </div>
             </form>
         </div>
