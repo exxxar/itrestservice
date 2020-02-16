@@ -14,13 +14,13 @@ Route::group(['prefix' => 'v1'], function () {
         'namespace' => 'Fastoran',
         'prefix' => 'fastoran'
     ], function () {
-        Route::resource('restorans', RestoransController::class);
-        Route::resource('cetegories', CategoryController::class);
-        Route::resource('kitchens', KitchenController::class);
-        Route::resource('menu_categories', MenuCategory::class);
-        Route::resource('menu', Menu::class);
-        Route::resource('menu_razdels', MenuRazdel::class);
-        Route::resource('menu_rubriks', MenuRubrik::class);
+        Route::resource('restorans', 'RestoransController');
+        Route::resource('cetegories', 'CategoryController');
+        Route::resource('kitchens', 'KitchenController');
+        Route::resource('menu_categories', 'MenuCategoryController');
+        Route::resource('menu', 'MenuController');
+        Route::resource('menu_razdels', 'MenuRazdelController');
+        Route::resource('menu_rubriks', 'MenuRubrikController');
     });
 
     Route::group([
