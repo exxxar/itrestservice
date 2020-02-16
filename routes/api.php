@@ -1,8 +1,28 @@
 <?php
 
+use App\Http\Controllers\Fastoran\CategoryController;
+use App\Http\Controllers\Fastoran\KitchenController;
+use App\Http\Controllers\Fastoran\RestoransController;
+use App\Parts\Models\Fastoran\Menu;
+use App\Parts\Models\Fastoran\MenuCategory;
+use App\Parts\Models\Fastoran\MenuRazdel;
+use App\Parts\Models\Fastoran\MenuRubrik;
 use Illuminate\Http\Request;
 
 Route::group(['prefix' => 'v1'], function () {
+    Route::group([
+        'namespace' => 'Fastoran',
+        'prefix' => 'fastoran'
+    ], function () {
+        Route::resource('restorans', RestoransController::class);
+        Route::resource('cetegories', CategoryController::class);
+        Route::resource('kitchens', KitchenController::class);
+        Route::resource('menu_categories', MenuCategory::class);
+        Route::resource('menu', Menu::class);
+        Route::resource('menu_razdels', MenuRazdel::class);
+        Route::resource('menu_rubriks', MenuRubrik::class);
+    });
+
     Route::group([
         'namespace' => 'Api',
         'prefix' => 'auth'
