@@ -21,6 +21,8 @@ Route::group(['prefix' => 'v1'], function () {
         Route::resource('menu', 'MenuController');
         Route::resource('menu_razdels', 'MenuRazdelController');
         Route::resource('menu_rubriks', 'MenuRubrikController');
+        Route::resource('orders', 'OrderController');
+        Route::resource('order_details', 'OrderDetailController');
     });
 
     Route::group([
