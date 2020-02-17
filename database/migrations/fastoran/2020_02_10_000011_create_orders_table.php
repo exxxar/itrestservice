@@ -35,6 +35,7 @@ class CreateOrdersTable extends Migration
             $table->integer('delivery_price');
             $table->integer('status');
             $table->string('delivery_range', 10);
+            $table->timestamps();
         });
     }
 
