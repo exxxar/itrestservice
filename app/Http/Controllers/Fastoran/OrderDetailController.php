@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Fastoran;
 
+use App\Http\Controllers\Controller;
 use App\Parts\Models\Fastoran\Order;
 use App\Parts\Models\Fastoran\OrderDetail;
 use Illuminate\Http\Request;
