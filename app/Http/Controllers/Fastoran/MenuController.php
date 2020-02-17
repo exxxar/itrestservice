@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Fastoran;
 use App\Http\Controllers\Controller;
 use App\Parts\Models\Fastoran\Menu;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class MenuController extends Controller
 {
@@ -17,7 +18,7 @@ class MenuController extends Controller
     {
         return response()
             ->json([
-                "menu"=>Menu::all()
+                "menu" => Menu::all()
             ]);
     }
 
@@ -34,7 +35,7 @@ class MenuController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -45,18 +46,22 @@ class MenuController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Menu  $menu
+     *
      * @return \Illuminate\Http\Response
      */
-    public function show(Menu $menu)
+    public function show($id)
     {
-        //
+        $menu = Menu::where("rest", $id)->get();
+        return response()->json([
+            "menu_items" => $menu
+        ]);
+
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Menu  $menu
+     * @param \App\Menu $menu
      * @return \Illuminate\Http\Response
      */
     public function edit(Menu $menu)
@@ -67,8 +72,8 @@ class MenuController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Menu  $menu
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Menu $menu
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Menu $menu)
@@ -79,7 +84,7 @@ class MenuController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Menu  $menu
+     * @param \App\Menu $menu
      * @return \Illuminate\Http\Response
      */
     public function destroy(Menu $menu)
