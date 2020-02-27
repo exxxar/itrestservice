@@ -11,7 +11,7 @@ use Laravel\Passport\HasApiTokens;
 
 class User extends Authenticatable
 {
-    use Notifiable,HasApiTokens,SoftDeletes;
+    use Notifiable, HasApiTokens, SoftDeletes;
 
     protected $dates = ['deleted_at'];
 
@@ -21,7 +21,15 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'active', 'activation_token','address','mobile_number'
+        'name',
+        'email',
+        'password',
+        'active',
+        'activation_token',
+        'address',
+        'mobile_number',
+       // 'social',
+        //'bonus',
     ];
 
     /**
@@ -46,6 +54,6 @@ class User extends Authenticatable
 
     public function getAvatarUrlAttribute()
     {
-        return "https://eu.ui-avatars.com/api/?background=0D8ABC&color=fff&name=".$this->name;//Storage::url('avatars/'.$this->id.'/'.$this->avatar);
+        return "https://eu.ui-avatars.com/api/?background=0D8ABC&color=fff&name=" . $this->name;//Storage::url('avatars/'.$this->id.'/'.$this->avatar);
     }
 }
