@@ -29,12 +29,17 @@ class AuthController extends Controller
         $request->validate([
             'name' => 'required|string',
             'email' => 'required|string|email|unique:users',
-            'password' => 'required|string|confirmed'
+            'password' => 'required|string|confirmed',
+            'mobile_number' => 'required',
+            'address' =>  'required',
         ]);
         $user = new User([
             'name' => $request->name,
             'email' => $request->email,
             'password' => bcrypt($request->password),
+            'mobile_number' =>$request->mobile_number,
+            'address' =>$request->address,
+            'active' =>true,
             'activation_token' => Str::random(60)
         ]);
         $user->save();
