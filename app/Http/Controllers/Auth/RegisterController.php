@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
@@ -62,14 +63,14 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+    protected function create(Request $request, array $data)
     {
 
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
-            'mobile_number' => $data['mobile_number'],
-            'address' => $data['address'],
+            'mobile_number' => $request->get('mobile_number'),
+            'address' => $request->get('address'),
             'password' => Hash::make($data['password']),
         ]);
     }
