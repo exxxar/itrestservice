@@ -31,7 +31,7 @@ Route::group(['prefix' => 'v1'], function () {
     ], function () {
         Route::post('login', 'AuthController@login');
         Route::post('signup', 'AuthController@signup');
-        Route::get('signup/activate/{token}', 'AuthController@signupActivate');
+        Route::get('signup/activate/{token}', 'AuthController@signupActivate')->name("signup.verify");
 
         Route::group([
             'middleware' => 'auth:api'
