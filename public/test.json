@@ -1,0 +1,37 @@
+{
+    "rest":1,
+    "user":1,
+    "summ":200,
+    "pers":0,
+    "dat":"2017-02-23",
+    "tim":"18:52:41",
+    "remark":"SOME TEXT",
+    "gosti":0,
+    "sdacha":0,
+    "delivery_price":125,
+    "status":0,
+    "delivery_range":0.1,
+    "order_details": [
+        {
+            "order_id":1,
+            "product_name":"test",
+            "product_id":1,
+            "count":1,
+            "price":1
+        },
+        {
+            "order_id":1,
+            "product_name":"test",
+            "product_id":1,
+            "count":1,
+            "price":1
+        },
+        {
+            "order_id":1,
+            "product_name":"test",
+            "product_id":1,
+            "count":1,
+            "price":1
+        }
+    ]
+}

@@ -58,8 +58,14 @@ Route::group(['prefix' => 'v1'], function () {
         'prefix' => 'methods',
         'middleware' => 'auth:api'
     ], function () {
-        Route::get('test', function () {
-            return "test";
+        Route::get('order', function () {
+
+
+            return response()
+                ->json([
+                    "message"=>"success",
+                    "status"=>200
+                ]);
         });
     });
 });
