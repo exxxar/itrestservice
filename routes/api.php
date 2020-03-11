@@ -58,7 +58,7 @@ Route::group(['prefix' => 'v1'], function () {
         'prefix' => 'methods',
         'middleware' => 'auth:api'
     ], function () {
-        Route::get('order', function () {
+        Route::post('order', function () {
 
 
             return response()
