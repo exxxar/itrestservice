@@ -8,6 +8,7 @@ use App\Parts\Models\Fastoran\MenuCategory;
 use App\Parts\Models\Fastoran\MenuRazdel;
 use App\Parts\Models\Fastoran\MenuRubrik;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 Route::group(['prefix' => 'v1'], function () {
     Route::group([
@@ -58,9 +59,8 @@ Route::group(['prefix' => 'v1'], function () {
         'prefix' => 'methods',
         'middleware' => 'auth:api'
     ], function () {
-        Route::post('order', function () {
-
-
+        Route::post('order', function (Request $request) {
+            Log::info(print_r($request->all(),true));
             return response()
                 ->json([
                     "message"=>"success",
