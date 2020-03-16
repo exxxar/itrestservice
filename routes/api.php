@@ -37,8 +37,8 @@ Route::group(['prefix' => 'v1'], function () {
         Route::group([
             'middleware' => 'auth:api'
         ], function () {
-            Route::get('logout', 'AuthController@logout');
-            Route::get('user', 'AuthController@user');
+            Route::any('logout', 'AuthController@logout');
+            Route::any('user', 'AuthController@user');
         });
     });
 
