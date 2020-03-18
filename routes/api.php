@@ -62,7 +62,7 @@ Route::group(['prefix' => 'v1'], function () {
         'middleware' => 'auth:api'
     ], function () {
         Route::any('history',function (){
-            $orders = Order::with(["details"])->where("user_id",1)
+            $orders = Order::with(["details"])->where("user_id",auth()->guard('api')->user()->id)
                 ->get();
 
             return response()
