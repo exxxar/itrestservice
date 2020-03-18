@@ -22,6 +22,14 @@ class Order extends Model
         "delivery_price",
         "status",
         "delivery_range",
+        "receiver_name",
+        "receiver_phone",
+        "receiver_region",
+        "receiver_delivery_time",
+        "receiver_address",
+        "receiver_pers",
+        "receiver_order_note",
+        "receiver_domophone",
     ];
 
     public function details()
