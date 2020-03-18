@@ -13,10 +13,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
 Route::group(['prefix' => 'v1'], function () {
-    Route::post("/wish",function (Request $request){
-       $phone = $request->request("phone");
-       $email = $request->request("email");
-       $from = $request->request("from");
+    Route::post('/wish', function (Request $request) {
+       $phone = $request->get("phone");
+       $email = $request->get("email");
+       $from = $request->get("from");
 
        Log::info("PHONE: $phone\nEMAIL: $email\nFROM: $from");
 
@@ -26,6 +26,7 @@ Route::group(['prefix' => 'v1'], function () {
                 "status"=>200
             ]);
     });
+
     Route::group([
         'namespace' => 'Fastoran',
         'prefix' => 'fastoran'
