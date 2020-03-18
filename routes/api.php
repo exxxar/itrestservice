@@ -13,12 +13,18 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
 Route::group(['prefix' => 'v1'], function () {
-    Route::post("/wish",function ($bot){
-       $phone = $bot->request("phone");
-       $email = $bot->request("email");
-       $from = $bot->request("from");
+    Route::post("/wish",function (Request $request){
+       $phone = $request->request("phone");
+       $email = $request->request("email");
+       $from = $request->request("from");
 
        Log::info("PHONE: $phone\nEMAIL: $email\nFROM: $from");
+
+        return response()
+            ->json([
+                "message"=>"success",
+                "status"=>200
+            ]);
     });
     Route::group([
         'namespace' => 'Fastoran',
