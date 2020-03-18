@@ -11,7 +11,7 @@ class Order extends Model
 
     protected $fillable = [
         "rest",
-        "user",
+        "user_id",
         "summ",
         "pers",
         "dat",
@@ -23,4 +23,10 @@ class Order extends Model
         "status",
         "delivery_range",
     ];
+
+    public function details()
+    {
+        return $this->hasMany(OrderDetail::class, 'order_id', 'id');
+    }
+
 }

@@ -7,6 +7,8 @@ use App\Parts\Models\Fastoran\Menu;
 use App\Parts\Models\Fastoran\MenuCategory;
 use App\Parts\Models\Fastoran\MenuRazdel;
 use App\Parts\Models\Fastoran\MenuRubrik;
+use App\Parts\Models\Fastoran\Order;
+use App\Parts\Models\Fastoran\OrderDetail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
@@ -59,11 +61,39 @@ Route::group(['prefix' => 'v1'], function () {
         'prefix' => 'methods',
         'middleware' => 'auth:api'
     ], function () {
-        Route::post('order', function (Request $request) {
-            Log::info(print_r($request->all(),true));
+        Route::any('history',function (){
+            $orders = Order::with(["details"])->where("user_id",auth()->guard('api')->user()->id)
+                ->get();
+
             return response()
                 ->json([
                     "message"=>"success",
+                    "orders"=>$orders,
+                    "status"=>200
+                ]);
+        });
+
+        Route::post('order', function (Request $request) {
+
+
+            $order = Order::create($request->all());
+            $order->user_id = auth()->guard('api')->user()->id;
+            $order->save();
+
+            $order_details = $request->get("order_details");
+
+
+
+            foreach ($order_details as $od){
+                $detail = OrderDetail::create($od);
+                $detail->order_id = $order->id;
+                $detail->save();
+            }
+
+            return response()
+                ->json([
+                    "message"=>"success",
+                    "data"=>$request->all(),
                     "status"=>200
                 ]);
         });
