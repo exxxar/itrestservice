@@ -13,6 +13,13 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
 Route::group(['prefix' => 'v1'], function () {
+    Route::post("/wish",function ($bot){
+       $phone = $bot->request("phone");
+       $email = $bot->request("email");
+       $from = $bot->request("from");
+
+       Log::info("PHONE: $phone\nEMAIL: $email\nFROM: $from");
+    });
     Route::group([
         'namespace' => 'Fastoran',
         'prefix' => 'fastoran'
@@ -62,6 +69,7 @@ Route::group(['prefix' => 'v1'], function () {
         'middleware' => 'auth:api'
     ], function () {
         Route::any('history',function (){
+            //todo: вынести в метод
             $orders = Order::with(["details"])->where("user_id",auth()->guard('api')->user()->id)
                 ->get();
 
@@ -75,14 +83,12 @@ Route::group(['prefix' => 'v1'], function () {
 
         Route::post('order', function (Request $request) {
 
-
+            //todo: вынести в метод
             $order = Order::create($request->all());
             $order->user_id = auth()->guard('api')->user()->id;
             $order->save();
 
             $order_details = $request->get("order_details");
-
-
 
             foreach ($order_details as $od){
                 $detail = OrderDetail::create($od);
