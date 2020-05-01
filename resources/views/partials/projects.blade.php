@@ -14,16 +14,37 @@
                 <!-- Begin project item -->
                 <div class="project-item">
                     <div class="project-item-card project-item-card-front">
+                        <img data-flickity-lazyload="https://sun9-42.userapi.com/c857632/v857632229/1c506e/C_MOovxsFFs.jpg" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
+                    </div>
+                    <div class="project-item-card project-item-card-back">
+                        <div class="project-item-card-center">
+                            <h5 class="project-item-title">Fastoran</h5>
+                            <div class="project-item-desc">
+                                <p>Служба доставки с ресторанов города Донецк</p>
+                            </div>
+                            <div class="wrapp-btn-circl-arrow justify-content-center">
+                                <a href="https://fastoran.com" class="btn-circl-arrow btn-circl-arrow-white">
+                                    <svg viewBox="0 0 13 9" width="13px" height="9px"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End project item -->
+            </div>
+            <div class="project-col project-col-carusel project-ux-design">
+                <!-- Begin project item -->
+                <div class="project-item">
+                    <div class="project-item-card project-item-card-front">
                         <img data-flickity-lazyload="https://sun9-9.userapi.com/c857028/v857028895/a6c2f/Limlk0hz4Bk.jpg" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
                     </div>
                     <div class="project-item-card project-item-card-back">
                         <div class="project-item-card-center">
                             <h5 class="project-item-title">Iva Med</h5>
                             <div class="project-item-desc">
-                                <p>We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
+                                <p>Магазин дизайнерской медицинской одежды</p>
                             </div>
                             <div class="wrapp-btn-circl-arrow justify-content-center">
-                                <a href="#!" class="btn-circl-arrow btn-circl-arrow-white">
+                                <a href="https://iva-med.ru" class="btn-circl-arrow btn-circl-arrow-white">
                                     <svg viewBox="0 0 13 9" width="13px" height="9px"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
                                 </a>
                             </div>
@@ -39,12 +60,12 @@
                     </div>
                     <div class="project-item-card project-item-card-back">
                         <div class="project-item-card-center">
-                            <h5 class="project-item-title">WeatherNow</h5>
+                            <h5 class="project-item-title">Hut Place</h5>
                             <div class="project-item-desc">
-                                <p>We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
+                                <p>Первый в мире развлекательный хоккейный портал!</p>
                             </div>
                             <div class="wrapp-btn-circl-arrow justify-content-center">
-                                <a href="#!" class="btn-circl-arrow btn-circl-arrow-white">
+                                <a href="http://hutplace.net" class="btn-circl-arrow btn-circl-arrow-white">
                                     <svg viewBox="0 0 13 9" width="13px" height="9px"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
                                 </a>
                             </div>
@@ -60,12 +81,12 @@
                     </div>
                     <div class="project-item-card project-item-card-back">
                         <div class="project-item-card-center">
-                            <h5 class="project-item-title">Langer Messenger</h5>
+                            <h5 class="project-item-title">Iva Med Bot</h5>
                             <div class="project-item-desc">
-                                <p>We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
+                                <p>Telegram бот сервиса покупок дизайнерской медицинской одежды в России.</p>
                             </div>
                             <div class="wrapp-btn-circl-arrow justify-content-center">
-                                <a href="#!" class="btn-circl-arrow btn-circl-arrow-white">
+                                <a href="http://t.me/iva_med_bot" class="btn-circl-arrow btn-circl-arrow-white">
                                     <svg viewBox="0 0 13 9" width="13px" height="9px"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
                                 </a>
                             </div>
@@ -81,12 +102,12 @@
                     </div>
                     <div class="project-item-card project-item-card-back">
                         <div class="project-item-card-center">
-                            <h5 class="project-item-title">Mobile Finance</h5>
+                            <h5 class="project-item-title">ISushi Bot</h5>
                             <div class="project-item-desc">
-                                <p>We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
+                                <p>Сервис заказа суши в городе Донецк. Позволяет не только заказать интересующие роллы, но и собрать собственный вариант, а в случае крупного заказа - можно поучаствовать в розыгрыше ценных и вкусных призов!</p>
                             </div>
                             <div class="wrapp-btn-circl-arrow justify-content-center">
-                                <a href="#!" class="btn-circl-arrow btn-circl-arrow-white">
+                                <a href="http://t.me/isushibot" class="btn-circl-arrow btn-circl-arrow-white">
                                     <svg viewBox="0 0 13 9" width="13px" height="9px"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
                                 </a>
                             </div>
@@ -102,12 +123,12 @@
                     </div>
                     <div class="project-item-card project-item-card-back">
                         <div class="project-item-card-center">
-                            <h5 class="project-item-title">RaptCash</h5>
+                            <h5 class="project-item-title">NHL Hut Bot</h5>
                             <div class="project-item-desc">
-                                <p>We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
+                                <p>Первый в своём роде поисковик карточек NHL в Telegram</p>
                             </div>
                             <div class="wrapp-btn-circl-arrow justify-content-center">
-                                <a href="#!" class="btn-circl-arrow btn-circl-arrow-white">
+                                <a href="http://t.me/nhlhutbot" class="btn-circl-arrow btn-circl-arrow-white">
                                     <svg viewBox="0 0 13 9" width="13px" height="9px"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
                                 </a>
                             </div>
@@ -123,12 +144,12 @@
                     </div>
                     <div class="project-item-card project-item-card-back">
                         <div class="project-item-card-center">
-                            <h5 class="project-item-title">Search by photo</h5>
+                            <h5 class="project-item-title">Skidki Dn Bot</h5>
                             <div class="project-item-desc">
-                                <p>We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
+                                <p>Telegram бот, позволяющий пользователям участвовать в акциях различных заведений города Донецка, а также накапливать бонусы и CashBack</p>
                             </div>
                             <div class="wrapp-btn-circl-arrow justify-content-center">
-                                <a href="#!" class="btn-circl-arrow btn-circl-arrow-white">
+                                <a href="http://t.me/skidki_dn_bot" class="btn-circl-arrow btn-circl-arrow-white">
                                     <svg viewBox="0 0 13 9" width="13px" height="9px"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
                                 </a>
                             </div>

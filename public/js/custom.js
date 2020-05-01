@@ -38,7 +38,8 @@
 
         OPTIONSCOOCIES: {
             title: 'Cookies',
-            message: 'We use cookies to understand how you use our site, to personalize content and to improve your experience. By continuing to use our site, you accept our use of cookies and revised.',
+            // message: 'We use cookies to understand how you use our site, to personalize content and to improve your experience. By continuing to use our site, you accept our use of cookies and revised.',
+            message: 'Мы используем cookie, чтобы понять, как вы используете наш сайт, персонализировать контент и улучшить ваш опыт. Продолжая использовать наш сайт, вы соглашаетесь на использование нами файлов cookie.',
             delay: 600,
             expires: 30,
             onAccept: function () {
@@ -644,7 +645,7 @@
             $.validator.addMethod("customemail", function (value, element) {
                     return /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(value);
                 },
-                "The email is not a valid email."
+                "Адрес электронной почты не является действительным."
             );
 
             $(".СЃallback_popup_form").validate({
@@ -659,10 +660,10 @@
                 },
                 messages: {
                     NameCallBack: {
-                        required: "The name field is required.",
+                        required: "Поле имени обязательно для заполнения.",
                     },
                     PhoneCallBack: {
-                        required: "The phone field is required.",
+                        required: "Поле телефона обязательно для заполнения.",
                     }
                 },
                 submitHandler: function(form) {
@@ -678,7 +679,7 @@
                     }).done(function() {
 
                         //customAlert(text, duration, alertInfo) info = "success" || "danger" || "warning" || "default"
-                        app.customAlert("Successfully sent!", 4000, "success");
+                        app.customAlert("Успешно отправлено!", 4000, "success");
 
                         setTimeout(function() {
                             th.trigger("reset");
@@ -707,15 +708,15 @@
                 },
                 messages: {
                     ContactName: {
-                        required: "The name field is required.",
+                        required: "Поле имени обязательно для заполнения.",
                     },
                     ContactPhone: {
-                        required: "The phone field is required.",
+                        required: "Поле телефона обязательно для заполнения.",
                     },
                     ContactEmail: {
-                        required: "The email field is required.",
-                        email: "The email field is required.",
-                        customemail: "The email is not a valid email."
+                        required: "Поле email обязательно для заполнения.",
+                        email: "Поле email обязательно для заполнения.",
+                        customemail: "Данный адрес электронной почты не является действительным."
                     },
                 },
                 submitHandler: function(form) {
@@ -728,7 +729,7 @@
                     }).done(function() {
 
                         //customAlert(text, duration, alertInfo) info = "success" || "danger" || "warning" || "default"
-                        app.customAlert("Successfully sent!", 4000, "success");
+                        app.customAlert("Успешно отправлено!", 4000, "success");
 
                         setTimeout(function() {
                             th.trigger("reset");
@@ -749,16 +750,16 @@
                 },
                 messages: {
                     ContactEmail: {
-                        required: "The email field is required.",
-                        email: "The email field is required.",
-                        customemail: "The email is not a valid email."
+                        required: "Поле email обязательно для заполнения.",
+                        email: "Поле email обязательно для заполнения.",
+                        customemail: "Данный адрес электронной почты не является действительным."
                     },
                 },
                 submitHandler: function(form) {
                     var th = $(form);
 
                     //customAlert(text, duration, alertInfo) info = "success" || "danger" || "warning" || "default"
-                    app.customAlert("Successfully sent!", 4000, "success");
+                    app.customAlert("Успешно отправлено!", 4000, "success");
 
                     setTimeout(function() {
                         th.trigger("reset");
@@ -780,17 +781,17 @@
                 },
                 messages: {
                     LoginName: {
-                        required: "The login field is required.",
+                        required: "Поле логина обязательно для заполнения.",
                     },
                     loginPassword: {
-                        required: "The password field is required.",
+                        required: "Поле пароля обязательно для заполнения.",
                     }
                 },
                 submitHandler: function(form) {
                     var th = $(form);
 
                     //customAlert(text, duration, alertInfo) info = "success" || "danger" || "warning" || "default"
-                    app.customAlert("Successfully sent!", 4000, "success");
+                    app.customAlert("Успешно отправлено!", 4000, "success");
 
                     setTimeout(function() {
                         th.trigger("reset");
@@ -812,10 +813,10 @@
                 },
                 messages: {
                     orderName: {
-                        required: "The name field is required.",
+                        required: "Поле имени обязательно для заполнения.",
                     },
                     orderPhone: {
-                        required: "The phone field is required.",
+                        required: "Поле телефона обязательно для заполнения.",
                     }
                 },
                 submitHandler: function(form) {
@@ -828,7 +829,7 @@
                     }).done(function() {
 
                         //customAlert(text, duration, alertInfo) info = "success" || "danger" || "warning" || "default"
-                        app.customAlert("Successfully sent!", 4000, "success");
+                        app.customAlert("Успешно отправлено!", 4000, "success");
 
                         setTimeout(function() {
                             th.trigger("reset");
@@ -849,16 +850,16 @@
                 },
                 messages: {
                     subscribeBgEmail: {
-                        required: "The email field is required.",
-                        email: "The email field is required.",
-                        customemail: "The email is not a valid email."
+                        required: "Поле email обязательно для заполнения.",
+                        email: "Поле email обязательно для заполнения.",
+                        customemail: "Данный адрес электронной почты не является действительным."
                     }
                 },
                 submitHandler: function(form) {
                     var th = $(form);
 
                     //customAlert(text, duration, alertInfo) info = "success" || "danger" || "warning" || "default"
-                    app.customAlert("Successfully sent!", 4000, "success");
+                    app.customAlert("Успешно отправлено!", 4000, "success");
 
                     setTimeout(function() {
                         th.trigger("reset");
@@ -877,16 +878,16 @@
                 },
                 messages: {
                     mailchimpEmail: {
-                        required: "The email field is required.",
-                        email: "The email field is required.",
-                        customemail: "The email is not a valid email."
+                        required: "Поле email обязательно для заполнения.",
+                        email: "Поле email обязательно для заполнения.",
+                        customemail: "Данный адрес электронной почты не является действительным."
                     }
                 },
                 submitHandler: function(form) {
                     var th = $(form);
 
                     //customAlert(text, duration, alertInfo) info = "success" || "danger" || "warning" || "default"
-                    app.customAlert("Successfully sent!", 4000, "success");
+                    app.customAlert("Успешно отправлено!", 4000, "success");
 
                     setTimeout(function() {
                         th.trigger("reset");
@@ -905,16 +906,16 @@
                 },
                 messages: {
                     cmEmail: {
-                        required: "The email field is required.",
-                        email: "The email field is required.",
-                        customemail: "The email is not a valid email."
+                        required: "Поле email обязательно для заполнения.",
+                        email: "Поле email обязательно для заполнения.",
+                        customemail: "Данный адрес электронной почты не является действительным."
                     }
                 },
                 submitHandler: function(form) {
                     var th = $(form);
 
                     //customAlert(text, duration, alertInfo) info = "success" || "danger" || "warning" || "default"
-                    app.customAlert("Successfully sent!", 4000, "success");
+                    app.customAlert("Успешно отправлено!", 4000, "success");
 
                     setTimeout(function() {
                         th.trigger("reset");
@@ -933,16 +934,16 @@
                 },
                 messages: {
                     commingSoonEmail: {
-                        required: "The email field is required.",
-                        email: "The email field is required.",
-                        customemail: "The email is not a valid email."
+                        required: "Поле email обязательно для заполнения.",
+                        email: "Поле email обязательно для заполнения.",
+                        customemail: "Данный адрес электронной почты не является действительным."
                     }
                 },
                 submitHandler: function(form) {
                     var th = $(form);
 
                     //customAlert(text, duration, alertInfo) info = "success" || "danger" || "warning" || "default"
-                    app.customAlert("Successfully sent!", 4000, "success");
+                    app.customAlert("Успешно отправлено!", 4000, "success");
 
                     setTimeout(function() {
                         th.trigger("reset");
@@ -969,12 +970,12 @@
                 },
                 messages: {
                     CommentsName: {
-                        required: "The name field is required."
+                        required: "Поле имени обязательно для заполнения."
                     },
                     CommentsEmail: {
-                        required: "The email field is required.",
-                        email: "The email field is required.",
-                        customemail: "The email is not a valid email."
+                        required: "Поле email обязательно для заполнения.",
+                        email: "Поле email обязательно для заполнения.",
+                        customemail: "Данный адрес электронной почты не является действительным."
                     },
                     CommentsMessage: {
                         required: "The message field is required."
@@ -984,7 +985,7 @@
                     var th = $(form);
 
                     //customAlert(text, duration, alertInfo) info = "success" || "danger" || "warning" || "default"
-                    app.customAlert("Successfully sent!", 4000, "success");
+                    app.customAlert("Успешно отправлено!", 4000, "success");
 
                     setTimeout(function() {
                         th.trigger("reset");
@@ -1003,16 +1004,16 @@
                 },
                 messages: {
                     CommentsEmail: {
-                        required: "The email field is required.",
-                        email: "The email field is required.",
-                        customemail: "The email is not a valid email."
+                        required: "Поле email обязательно для заполнения.",
+                        email: "Поле email обязательно для заполнения.",
+                        customemail: "Данный адрес электронной почты не является действительным."
                     }
                 },
                 submitHandler: function(form) {
                     var th = $(form);
 
                     //customAlert(text, duration, alertInfo) info = "success" || "danger" || "warning" || "default"
-                    app.customAlert("Successfully sent!", 4000, "success");
+                    app.customAlert("Успешно отправлено!", 4000, "success");
 
                     setTimeout(function() {
                         th.trigger("reset");
@@ -1145,7 +1146,7 @@
 
             if(this.detectIECheck()) {
                 var body = document.querySelector("body"),
-                    msg = 'Unfortunately, the browser Internet Explorer you use is outdated and cannot display the site normally. <br> Please open the site in another browser';
+                    msg = 'К сожалению, используемый вами браузер Internet Explorer устарел и не может нормально отображать сайт. <br> Пожалуйста, откройте сайт в другом браузере';
                 body.classList.add("overflow-hidden");
                 body.innerHTML = '<div class="ie-browser"><div class="ie-browser-tr"><div class="ie-browser-td">'+ msg +'</div></div></div>';
             }
@@ -1186,7 +1187,7 @@ function initMap() {
         address = mapInfo.val();
     function initialize() {
         geocoder = new google.maps.Geocoder();
-        var latlng = new google.maps.LatLng(-34.397, 150.644);
+        var latlng = new google.maps.LatLng(48.0074449,37.8093354);
         var myOptions = {
             zoom: 15,
             center: latlng,

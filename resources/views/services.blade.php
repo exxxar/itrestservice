@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Page Title')
+@section('title', 'Услуги')
 
 @section('content')
     <!-- Begin bread crumbs -->
@@ -10,10 +10,10 @@
                 <div class="col-12">
                     <ul class="bread-crumbs-list">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="index.html">Главная</a>
                             <i class="material-icons md-18">chevron_right</i>
                         </li>
-                        <li><a href="#!">Services</a></li>
+                        <li><a href="#!">Услуги</a></li>
                     </ul>
                 </div>
             </div>
@@ -25,90 +25,49 @@
         <div class="container">
             <div class="row items">
                 <div class="col-12">
-                    <div class="wrapp-page-title page-title-center">
-                        <div class="page-subtitle">Areas what we serv</div>
-                        <h1 class="page-title">Our Services</h1>
+                    <div class="wrapp-section-title section-title-center">
+                        <div class="section-subtitle">То что мы умеем делать</div>
+                        <h2 class="section-title">Наши услуги</h2>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 item">
                     <!-- Begin services item -->
-                    <a href="single-services.html" class="services-item item-style">
+                    <a href="{{route('website-singleservice')}}" class="services-item services-item-modern item-style">
                         <div class="services-item-ico">
-                            <i class="material-icons material-icons-outlined md-48">settings</i>
+                            <i class="material-icons material-icons-outlined md-48">desktop_windows</i>
                         </div>
                         <div class="services-item-ico-bg">
-                            <i class="material-icons material-icons-outlined">settings</i>
+                            <i class="material-icons material-icons-outlined">desktop_windows</i>
                         </div>
-                        <h4 class="services-item-title">Corporate Solution</h4>
-                        <div class="services-item-desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                            in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
+                        <h4 class="services-item-title">Веб-сайты</h4>
+                        <div class="services-item-desc">Наши компетенции позволяют создавать сайты любой сложности: от простого сайта-визитки до сложного корпоративного портала или интернет-магазина, интегрированного с учетной системой.</div>
                     </a><!-- End services item -->
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 item">
                     <!-- Begin services item -->
-                    <a href="single-services.html" class="services-item item-style">
+                    <a href="{{route('bots-singleservice')}}" class="services-item services-item-modern item-style">
                         <div class="services-item-ico">
-                            <i class="material-icons material-icons-outlined md-48">perm_phone_msg</i>
+                            <i class="material-icons material-icons-outlined md-48">message</i>
                         </div>
                         <div class="services-item-ico-bg">
-                            <i class="material-icons material-icons-outlined">perm_phone_msg</i>
+                            <i class="material-icons material-icons-outlined">message</i>
                         </div>
-                        <h4 class="services-item-title">Call Center Solutions</h4>
-                        <div class="services-item-desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-                            in a piece of classical Latin literature from 45 BC, making it.</div>
+                        <h4 class="services-item-title">Чат-боты</h4>
+                        <div class="services-item-desc">Чат бот для бизнеса и личных целей давно стал востребованной услугой. Существует несколько видов чат-ботов, которые Вы можете заказать в нашей компании: чат-боты в мессенджерах, чат-боты в социальных сетях, чат-боты для Вашего сайта.
+                        </div>
                     </a><!-- End services item -->
                 </div>
                 <div class="col-lg-4 col-md-12 col-12 item">
                     <!-- Begin services item -->
-                    <a href="single-services.html" class="services-item item-style">
+                    <a href="" class="services-item services-item-modern item-style">
                         <div class="services-item-ico">
-                            <i class="material-icons material-icons-outlined md-48">cloud_download</i>
+                            <i class="material-icons material-icons-outlined md-48">phonelink_ring</i>
                         </div>
                         <div class="services-item-ico-bg">
-                            <i class="material-icons material-icons-outlined">cloud_download</i>
+                            <i class="material-icons material-icons-outlined">phonelink_ring</i>
                         </div>
-                        <h4 class="services-item-title">Cloud Development</h4>
-                        <div class="services-item-desc">There are many variations of passages of Lorem Ipsum available, but the majority
-                            have suffered alteration in some form, by injected humour, or randomised word.</div>
-                    </a><!-- End services item -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 item">
-                    <!-- Begin services item -->
-                    <a href="single-services.html" class="services-item item-style">
-                        <div class="services-item-ico">
-                            <i class="material-icons material-icons-outlined md-48">laptop_mac</i>
-                        </div>
-                        <div class="services-item-ico-bg">
-                            <i class="material-icons material-icons-outlined">laptop_mac</i>
-                        </div>
-                        <h4 class="services-item-title">IOS/MacOS Apps</h4>
-                        <div class="services-item-desc">Donec rutrum congue leo eget malesuada. Cras ultricies ligula sed magna dictum porta. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</div>
-                    </a><!-- End services item -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 item">
-                    <!-- Begin services item -->
-                    <a href="single-services.html" class="services-item item-style">
-                        <div class="services-item-ico">
-                            <i class="material-icons material-icons-outlined md-48">phone_android</i>
-                        </div>
-                        <div class="services-item-ico-bg">
-                            <i class="material-icons material-icons-outlined">phone_android</i>
-                        </div>
-                        <h4 class="services-item-title">Android Applications</h4>
-                        <div class="services-item-desc">Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit.</div>
-                    </a><!-- End services item -->
-                </div>
-                <div class="col-lg-4 col-md-12 col-12 item">
-                    <!-- Begin services item -->
-                    <a href="single-services.html" class="services-item item-style">
-                        <div class="services-item-ico">
-                            <i class="material-icons material-icons-outlined md-48">tv</i>
-                        </div>
-                        <div class="services-item-ico-bg">
-                            <i class="material-icons material-icons-outlined">tv</i>
-                        </div>
-                        <h4 class="services-item-title">UX And Design</h4>
-                        <div class="services-item-desc">Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus.</div>
+                        <h4 class="services-item-title">Мобильные приложения</h4>
+                        <div class="services-item-desc">Мы разрабатываем мобильные приложения, отвечающие всем требованиям и рекомендациям платформ, что обеспечивает их стабильную и безукоризненную работу.</div>
                     </a><!-- End services item -->
                 </div>
             </div>

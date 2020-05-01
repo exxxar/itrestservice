@@ -10,7 +10,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-12 item">
                 <!-- Begin services item -->
-                <a href="{{route('singleservice')}}" class="services-item services-item-modern item-style">
+                <a href="{{route('website-singleservice')}}" class="services-item services-item-modern item-style">
                     <div class="services-item-ico">
                         <i class="material-icons material-icons-outlined md-48">desktop_windows</i>
                     </div>
@@ -18,12 +18,12 @@
                         <i class="material-icons material-icons-outlined">desktop_windows</i>
                     </div>
                     <h4 class="services-item-title">Веб-сайты</h4>
-                    <div class="services-item-desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
+                    <div class="services-item-desc">Наши компетенции позволяют создавать сайты любой сложности: от простого сайта-визитки до сложного корпоративного портала или интернет-магазина, интегрированного с учетной системой.</div>
                 </a><!-- End services item -->
             </div>
             <div class="col-lg-4 col-md-6 col-12 item">
                 <!-- Begin services item -->
-                <a href="{{route('singleservice')}}" class="services-item services-item-modern item-style">
+                <a href="{{route('bots-singleservice')}}" class="services-item services-item-modern item-style">
                     <div class="services-item-ico">
                         <i class="material-icons material-icons-outlined md-48">message</i>
                     </div>
@@ -31,12 +31,13 @@
                         <i class="material-icons material-icons-outlined">message</i>
                     </div>
                     <h4 class="services-item-title">Чат-боты</h4>
-                    <div class="services-item-desc">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it.</div>
+                    <div class="services-item-desc">Чат бот для бизнеса и личных целей давно стал востребованной услугой. Существует несколько видов чат-ботов, которые Вы можете заказать в нашей компании: чат-боты в мессенджерах, чат-боты в социальных сетях, чат-боты для Вашего сайта.
+                    </div>
                 </a><!-- End services item -->
             </div>
             <div class="col-lg-4 col-md-12 col-12 item">
                 <!-- Begin services item -->
-                <a href="{{route('singleservice')}}" class="services-item services-item-modern item-style">
+                <a href="" class="services-item services-item-modern item-style">
                     <div class="services-item-ico">
                         <i class="material-icons material-icons-outlined md-48">phonelink_ring</i>
                     </div>
@@ -44,17 +45,17 @@
                         <i class="material-icons material-icons-outlined">phonelink_ring</i>
                     </div>
                     <h4 class="services-item-title">Мобильные приложения</h4>
-                    <div class="services-item-desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</div>
+                    <div class="services-item-desc">Мы разрабатываем мобильные приложения, отвечающие всем требованиям и рекомендациям платформ, что обеспечивает их стабильную и безукоризненную работу.</div>
                 </a><!-- End services item -->
             </div>
-            <div class="col-12">
-                <div class="section-btns justify-content-center">
-                    <a href="{{route('services')}}" class="btn btn-widht-ico btn-w240 ripple">
-                        <span>Все услуги</span>
-                        <svg class="btn-widht-ico-right" viewBox="0 0 13 9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
-                    </a>
-                </div>
-            </div>
+{{--            <div class="col-12">--}}
+{{--                <div class="section-btns justify-content-center">--}}
+{{--                    <a href="{{route('services')}}" class="btn btn-widht-ico btn-w240 ripple">--}}
+{{--                        <span>Все услуги</span>--}}
+{{--                        <svg class="btn-widht-ico-right" viewBox="0 0 13 9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>--}}
+{{--                    </a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
     </div>
 </section><!-- End our serveces -->

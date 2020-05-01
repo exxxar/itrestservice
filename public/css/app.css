@@ -6198,8 +6198,8 @@ blockquote footer {
     border: none;
     cursor: pointer;
     overflow: hidden;
-    -webkit-transition: all .25s;
-    transition: all .25s
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
 .btn.btn-w240 {
@@ -6292,9 +6292,10 @@ blockquote footer {
 }
 
 .btn:hover {
-    background: #2876e2;
-    background: -webkit-gradient(linear, right top, left top, color-stop(0, #a90707), to(#900c57));
-    background: linear-gradient(to left, #a90707 0, #900c57  100%);
+    /*background: #2876e2;*/
+    background: #8d3e9e;
+    /*background: -webkit-gradient(linear, right top, left top, color-stop(0, #a90707), to(#900c57));*/
+    /*background: linear-gradient(to left, #a90707 0, #900c57  100%);*/
     color: #fff;
     fill: #fff
 }
@@ -7877,7 +7878,7 @@ textarea {
     color: rgba(44, 122, 231, .14);
     position: absolute;
     left: 0;
-    bottom: -1rem;
+    /*bottom: -1rem;*/
     line-height: 1
 }
 

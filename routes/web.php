@@ -52,5 +52,11 @@ Route::get('/timeline', function () {
 Route::get('/single-service', function () {
     return view('single-service');
 })->name("singleservice");
+Route::get('/websites', function () {
+    return view('website-single-service');
+})->name("website-singleservice");
+Route::get('/bots', function () {
+    return view('bots-single-service');
+})->name("bots-singleservice");
 
 

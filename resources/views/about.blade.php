@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Page Title')
+@section('title', 'О компании')
 
 @section('content')
     <!-- Begin bread crumbs -->
@@ -10,10 +10,10 @@
                 <div class="col-12">
                     <ul class="bread-crumbs-list">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="index.html">Главная</a>
                             <i class="material-icons md-18">chevron_right</i>
                         </li>
-                        <li><a href="#!">About us</a></li>
+                        <li><a href="#!">О нас</a></li>
                     </ul>
                 </div>
             </div>
@@ -26,22 +26,16 @@
             <div class="row">
                 <div class="col-12">
                     <div class="wrapp-page-title page-title-center">
-                        <div class="page-subtitle">MORE INFO</div>
-                        <h1 class="page-title">About us</h1>
+                        <div class="page-subtitle">ещё больше информации</div>
+                        <h1 class="page-title">О нас</h1>
                     </div>
                     <div class="content">
                         <div class="img-style">
                             <img src="img/about-img.jpg" alt="">
                         </div>
-                        <h2>Developing High-quality Apps</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. Our site design and navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content.</p>
-                        <h3>Providing Reliable Software</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page. It will tell you lots of interesting things about our company, its products and services, highly professional staff and happy customers. Our site design and navigation has been thoroughly thought out. The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly. You will always know where you are now and will be able to skip from one page to another with a single mouse click. We use only trusted, verified content.</p>
-                        <h3>Supporting Our Clients</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+{{--                        <h2>Developing High-quality Apps</h2>--}}
+                        <p>It Rest Service - команда молодых и перспективных специалистов в области web-разработки.</p>
+                        <p>Мы - слаженный коллектив, каждый член которого любит своё дело и постоянно совершенствует знания в своей профессиональной области. Все проекты для нас -несто большее, чем просто работа. В первую очередь, это шаг в будущее бизнеса наших клиентов</p>
                     </div>
                 </div>
             </div>
@@ -54,8 +48,8 @@
             <div class="row items">
                 <div class="col-12">
                     <div class="wrapp-section-title section-title-center">
-                        <div class="section-subtitle">some reasons</div>
-                        <h2 class="section-title">Why Choose Us</h2>
+                        <div class="section-subtitle">несколько причин</div>
+                        <h2 class="section-title">Почему мы?</h2>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 item">
@@ -63,9 +57,9 @@
                     <div class="advantages-item">
                         <div class="advantages-item-count">01</div>
                         <div class="advantages-item-info">
-                            <h4 class="advantages-item-title">High Quality Hardware</h4>
+                            <h4 class="advantages-item-title">Эффективность</h4>
                             <div class="advantages-item-desc">
-                                <p>We use top-notch hardware to develop the most efficient apps for our customers</p>
+                                <p>Быстрая скорость обработки запроса и адекватные сроки выполнения</p>
                             </div>
                         </div>
                     </div><!-- End choose us item -->
@@ -75,9 +69,9 @@
                     <div class="advantages-item">
                         <div class="advantages-item-count">02</div>
                         <div class="advantages-item-info">
-                            <h4 class="advantages-item-title">Dedicated 24\7 Support</h4>
+                            <h4 class="advantages-item-title">Соответствие цена-качество</h4>
                             <div class="advantages-item-desc">
-                                <p>You can rely on our 24/7 tech support that will gladly solve any app issue you may have.</p>
+                                <p>Повышение эффективности сайтов при оптимальном соотношении цены и качества.</p>
                             </div>
                         </div>
                     </div><!-- End choose us item -->
@@ -87,9 +81,9 @@
                     <div class="advantages-item">
                         <div class="advantages-item-count">03</div>
                         <div class="advantages-item-info">
-                            <h4 class="advantages-item-title">30-Day Money-back Guarantee</h4>
+                            <h4 class="advantages-item-title">Поддержка 24/7</h4>
                             <div class="advantages-item-desc">
-                                <p>If you are not satisfied with our apps, we will return your money in the first 30 days.</p>
+                                <p>Для всех наших клиентов доступа оперативная техническая поддержка.</p>
                             </div>
                         </div>
                     </div><!-- End choose us item -->
@@ -99,9 +93,9 @@
                     <div class="advantages-item">
                         <div class="advantages-item-count">04</div>
                         <div class="advantages-item-info">
-                            <h4 class="advantages-item-title">Agile and Fast Working Style</h4>
+                            <h4 class="advantages-item-title">Быстрая разработка</h4>
                             <div class="advantages-item-desc">
-                                <p>This type of approach to our work helps our specialists to quickly develop better apps.</p>
+                                <p>Быстрая разработка по методологии Agile</p>
                             </div>
                         </div>
                     </div><!-- End choose us item -->
@@ -111,9 +105,9 @@
                     <div class="advantages-item">
                         <div class="advantages-item-count">05</div>
                         <div class="advantages-item-info">
-                            <h4 class="advantages-item-title">Some Apps <br> are Free</h4>
+                            <h4 class="advantages-item-title">Демо-версии проектов</h4>
                             <div class="advantages-item-desc">
-                                <p>We also develop free apps that can be downloaded online without any payments.</p>
+                                <p>Пробуй демо-версию проекта абсолютно бесплатно</p>
                             </div>
                         </div>
                     </div><!-- End choose us item -->
@@ -123,9 +117,9 @@
                     <div class="advantages-item">
                         <div class="advantages-item-count">06</div>
                         <div class="advantages-item-info">
-                            <h4 class="advantages-item-title">High Level of Usability</h4>
+                            <h4 class="advantages-item-title">Высокая производительность</h4>
                             <div class="advantages-item-desc">
-                                <p>All our products have high usability allowing users to easily operate the apps.</p>
+                                <p>Все наши продукты имеют высокую практичность, что позволяет пользователям легко управлять приложениями.</p>
                             </div>
                         </div>
                     </div><!-- End choose us item -->
@@ -140,57 +134,57 @@
             <div class="row items">
                 <div class="col-12">
                     <div class="wrapp-section-title section-title-center">
-                        <div class="section-subtitle">The best</div>
-                        <h2 class="section-title">Our customers</h2>
-                        <p class="section-desc">Our customers have disrupted industries, opened new markets, and made countless lives better. We are privileged to work with hundreds of future-thinking businesses, including many of the world’s top hardware, software, and consumer brands.</p>
+                        <div class="section-subtitle">Самые лучшие</div>
+                        <h2 class="section-title">Наши клиенты</h2>
+                        <p class="section-desc">Нам выпала честь работать с десятками перспективных компаний и талантливых предпринимателей</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6 item">
                     <!-- Begin brands item -->
                     <div class="brands-item item-style">
-                        <img data-src="img/brands/circle.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
+                        <img data-src="img/lotus.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
                     </div><!-- End brands item -->
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6 item">
                     <!-- Begin brands item -->
                     <div class="brands-item item-style">
-                        <img data-src="img/brands/codelab.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
+                        <img data-src="img/fastoran.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
                     </div><!-- End brands item -->
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6 item">
                     <!-- Begin brands item -->
                     <div class="brands-item item-style">
-                        <img data-src="img/brands/earth.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
+                        <img data-src="img/ivamed.svg" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
                     </div><!-- End brands item -->
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6 item">
                     <!-- Begin brands item -->
                     <div class="brands-item item-style">
-                        <img data-src="img/brands/hexa.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
+                        <img data-src="img/autodon.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
                     </div><!-- End brands item -->
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6 item">
                     <!-- Begin brands item -->
                     <div class="brands-item item-style">
-                        <img data-src="img/brands/lightai.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
+                        <img data-src="img/isushi.jpg" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
                     </div><!-- End brands item -->
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6 item">
                     <!-- Begin brands item -->
                     <div class="brands-item item-style">
-                        <img data-src="img/brands/nirastate.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
+                        <img data-src="img/hutplace.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
                     </div><!-- End brands item -->
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6 item">
                     <!-- Begin brands item -->
                     <div class="brands-item item-style">
-                        <img data-src="img/brands/treva.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
+                        <img data-src="img/diner.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
                     </div><!-- End brands item -->
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6 item">
                     <!-- Begin brands item -->
                     <div class="brands-item item-style">
-                        <img data-src="img/brands/zootv.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
+                        <img data-src="img/skidka.jpg" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
                     </div><!-- End brands item -->
                 </div>
             </div>

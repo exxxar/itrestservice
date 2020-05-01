@@ -17,11 +17,11 @@
                                     <p>Высококачественные специалисты в области веб и мобильной разработки. Мы воплотим в реальность все ваши технологичные мечты.</p>
                                 </div>
                                 <div class="main-banner-btns">
-                                    <a href="{{route('timeline')}}" class="btn btn-widht-ico btn-small ripple">
-                                        <span>Подробнее</span>
-                                        <svg class="btn-widht-ico-right" viewBox="0 0 13 9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
-                                    </a>
-                                    <a href="{{route('comingsoon')}}" class="btn btn-widht-ico btn-border btn-small ripple">
+{{--                                    <a href="{{route('timeline')}}" class="btn btn-widht-ico btn-small ripple">--}}
+{{--                                        <span>Подробнее</span>--}}
+{{--                                        <svg class="btn-widht-ico-right" viewBox="0 0 13 9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>--}}
+{{--                                    </a>--}}
+                                    <a href="{{route("contactus")}}" class="btn btn-widht-ico btn-small ripple">
                                         <span>Заказать</span>
                                         <svg class="btn-widht-ico-right" viewBox="0 0 13 9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
                                     </a>
@@ -37,43 +37,18 @@
                     <div class="row">
                         <div class="col">
                             <div class="main-banner-box">
-                                <h2 class="main-banner-title">IT Solutions for Your Business</h2>
+                                <h2 class="main-banner-title">IT Проекты для вашего бизнеса!</h2>
                                 <div class="main-banner-desc">
                                     <p>
                                         С момента нашего основания мы поставляем высококачественные и надежные программные решения для целей корпоративного бизнеса.</p>
                                 </div>
                                 <div class="main-banner-btns">
-                                    <a href="#!" class="btn btn-widht-ico btn-small ripple">
-                                        <span>Подробнее</span>
-                                        <svg class="btn-widht-ico-right" viewBox="0 0 13 9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
-                                    </a>
-                                    <a href="#!" class="btn btn-widht-ico btn-border btn-small">
-                                        <span>Get in Touch</span>
-                                        <svg class="btn-widht-ico-right" viewBox="0 0 13 9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main-banner-slider-item">
-                <div class="main-banner-item-img-right" data-flickity-bg-lazyload="{{asset("img/2.jpg")}}"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="main-banner-box">
-                                <h2 class="main-banner-title">IT Solutions for Your Business</h2>
-                                <div class="main-banner-desc">
-                                    <p>With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
-                                </div>
-                                <div class="main-banner-btns">
-                                    <a href="#!" class="btn btn-widht-ico btn-small ripple">
-                                        <span>Подробнее</span>
-                                        <svg class="btn-widht-ico-right" viewBox="0 0 13 9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
-                                    </a>
-                                    <a href="#!" class="btn btn-widht-ico btn-border btn-small">
-                                        <span>Get in Touch</span>
+{{--                                    <a href="#!" class="btn btn-widht-ico btn-small ripple">--}}
+{{--                                        <span>Подробнее</span>--}}
+{{--                                        <svg class="btn-widht-ico-right" viewBox="0 0 13 9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>--}}
+{{--                                    </a>--}}
+                                    <a href="{{route("contactus")}}" class="btn btn-widht-ico btn-small ripple">
+                                        <span>Заказать</span>
                                         <svg class="btn-widht-ico-right" viewBox="0 0 13 9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
                                     </a>
                                 </div>
@@ -82,6 +57,31 @@
                     </div>
                 </div>
             </div>
+{{--            <div class="main-banner-slider-item">--}}
+{{--                <div class="main-banner-item-img-right" data-flickity-bg-lazyload="{{asset("img/2.jpg")}}"></div>--}}
+{{--                <div class="container">--}}
+{{--                    <div class="row">--}}
+{{--                        <div class="col">--}}
+{{--                            <div class="main-banner-box">--}}
+{{--                                <h2 class="main-banner-title">IT Solutions for Your Business</h2>--}}
+{{--                                <div class="main-banner-desc">--}}
+{{--                                    <p>With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>--}}
+{{--                                </div>--}}
+{{--                                <div class="main-banner-btns">--}}
+{{--                                    <a href="#!" class="btn btn-widht-ico btn-small ripple">--}}
+{{--                                        <span>Подробнее</span>--}}
+{{--                                        <svg class="btn-widht-ico-right" viewBox="0 0 13 9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>--}}
+{{--                                    </a>--}}
+{{--                                    <a href="#!" class="btn btn-widht-ico btn-border btn-small">--}}
+{{--                                        <span>Get in Touch</span>--}}
+{{--                                        <svg class="btn-widht-ico-right" viewBox="0 0 13 9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
     </div>
 
@@ -95,8 +95,8 @@
 
     @include("partials.team")
 
-    @include("partials.reviews")
+{{--    @include("partials.reviews")--}}
 
-    @include("partials.latest_news")
+{{--    @include("partials.latest_news")--}}
 
 @endsection

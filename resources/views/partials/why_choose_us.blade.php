@@ -5,7 +5,7 @@
         <div class="row items">
             <div class="col-12">
                 <div class="wrapp-section-title section-title-center">
-                    <div class="section-subtitle">some reasons</div>
+                    <div class="section-subtitle">несколько причин</div>
                     <h2 class="section-title">Почему мы?</h2>
                 </div>
             </div>
