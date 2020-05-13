@@ -23,7 +23,7 @@
                                 <p>Служба доставки с ресторанов города Донецк</p>
                             </div>
                             <div class="wrapp-btn-circl-arrow justify-content-center">
-                                <a href="https://fastoran.com" class="btn-circl-arrow btn-circl-arrow-white">
+                                <a href="{{route('fastoran')}}" class="btn-circl-arrow btn-circl-arrow-white">
                                     <svg viewBox="0 0 13 9" width="13px" height="9px"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
                                 </a>
                             </div>

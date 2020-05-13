@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="wrapp-section-title section-title-center">
-                    <div class="section-subtitle">То что мы умеем делать</div>
+                    <div class="section-subtitle">То, что мы умеем делать</div>
                     <h2 class="section-title">Наши услуги</h2>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                         <i class="material-icons material-icons-outlined">message</i>
                     </div>
                     <h4 class="services-item-title">Чат-боты</h4>
-                    <div class="services-item-desc">Чат бот для бизнеса и личных целей давно стал востребованной услугой. Существует несколько видов чат-ботов, которые Вы можете заказать в нашей компании: чат-боты в мессенджерах, чат-боты в социальных сетях, чат-боты для Вашего сайта.
+                    <div class="services-item-desc">Чат-бот для бизнеса и личных целей давно стал востребованной услугой. Существует несколько видов чат-ботов, которые Вы можете заказать в нашей компании: чат-боты в мессенджерах, чат-боты в социальных сетях, чат-боты для Вашего сайта.
                     </div>
                 </a><!-- End services item -->
             </div>

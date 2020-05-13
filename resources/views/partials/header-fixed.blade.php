@@ -11,7 +11,7 @@
         <div class="col-auto header-fixed-col">
             <!-- Begin logo -->
             <a href="/" class="logo logo-ico-widht-text" title="it-rest-service">
-                <img class="lazy logo-ico" data-src="img/logo.png"  alt="">
+                <img class="lazy logo-ico" src="{{asset("img/logo.png")}}"  alt="">
             </a>
         </div>
 
@@ -42,28 +42,28 @@
                     </nav><!-- End main menu -->
                 </div>
 
-                <div class="col-auto header-fixed-col col-static">
-                    <!-- Begin header search -->
-                    <div class="header-search">
-                        <div class="header-search-ico">
-                            <i class="material-icons md-22 header-search-ico-search">search</i>
-                            <i class="material-icons md-22 header-search-ico-close">close</i>
-                        </div>
-                        <form action="#!" method="post" class="header-search-form">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-field">
-                                            <label for="field-search" class="form-field-label">Search...</label>
-                                            <input type="search" class="form-field-input" name="Search" value="" autocomplete="off" required="required" id="field-search">
-                                            <button type="submit" class="header-search-btn"><i class="material-icons md-22">search</i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div><!-- End header search -->
-                </div>
+{{--                <div class="col-auto header-fixed-col col-static">--}}
+{{--                    <!-- Begin header search -->--}}
+{{--                    <div class="header-search">--}}
+{{--                        <div class="header-search-ico">--}}
+{{--                            <i class="material-icons md-22 header-search-ico-search">search</i>--}}
+{{--                            <i class="material-icons md-22 header-search-ico-close">close</i>--}}
+{{--                        </div>--}}
+{{--                        <form action="#!" method="post" class="header-search-form">--}}
+{{--                            <div class="container">--}}
+{{--                                <div class="row">--}}
+{{--                                    <div class="col-12">--}}
+{{--                                        <div class="form-field">--}}
+{{--                                            <label for="field-search" class="form-field-label">Search...</label>--}}
+{{--                                            <input type="search" class="form-field-input" name="Search" value="" autocomplete="off" required="required" id="field-search">--}}
+{{--                                            <button type="submit" class="header-search-btn"><i class="material-icons md-22">search</i></button>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </form>--}}
+{{--                    </div><!-- End header search -->--}}
+{{--                </div>--}}
                 <div class="col-auto d-block d-lg-none col-static header-fixed-col">
                     <div class="header-navbar">
                         <div class="header-navbar-btn">
@@ -77,13 +77,13 @@
                                 </a>
                             </li>
                             <li>
-                                <b>24/7 Support:</b>
+                                <b>24/7 Поддержка:</b>
                                 <a href="#!" class="formingHrefTel">+38 (071) 432-06-61</a>
                             </li>
                             <li>
                                 <a href="#сallback_popup" class="header-call-back-link сallback_popup_open">
                                     <i class="material-icons">ring_volume</i>
-                                    <span>Callback</span>
+                                    <span>Заказать звонок</span>
                                 </a>
                             </li>
                             <li>

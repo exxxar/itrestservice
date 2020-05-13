@@ -84,10 +84,10 @@
                         <div class="footer-company-info">
                             <div class="footer-company-top">
                                 <a href="/" class="logo logo-ico-widht-text footer-logo" title="IT Rest Service">
-                                    <img class="lazy logo-ico" src="img/logo.png" alt="" style="">
+                                    <img class="lazy logo-ico" src="/img/logo.png" alt="" style="">
                                 </a>
                                 <div class="footer-company-desc">
-                                    <p>Мы собрали большой штат высокоэффективных сотрудников, которые могут реализовать
+                                    <p>Мы собрали штат высокоэффективных сотрудников, которые могут реализовать
                                         проект любой сложности и окажут полный комплекс услуг.
                                         Наша компания заинтересована в том, чтобы удовлетворить потребности каждого
                                         клиента.
@@ -98,28 +98,28 @@
                                 <li>
                                     <a href="#!" title="Facebook">
                                         <svg viewBox="0 0 320 512">
-                                            <use xlink:href="img/sprite.svg#facebook-ico"></use>
+                                            <use xlink:href="/img/sprite.svg#facebook-ico"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#!" title="Instagram">
                                         <svg viewBox="0 0 448 512">
-                                            <use xlink:href="img/sprite.svg#instagram-ico"></use>
+                                            <use xlink:href="/img/sprite.svg#instagram-ico"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#!" title="LinkedIn">
                                         <svg viewBox="0 0 448 512">
-                                            <use xlink:href="img/sprite.svg#linkedin-in-ico"></use>
+                                            <use xlink:href="/img/sprite.svg#linkedin-in-ico"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#!" title="Twitter">
                                         <svg viewBox="0 0 512 512">
-                                            <use xlink:href="img/sprite.svg#twitter-ico"></use>
+                                            <use xlink:href="/img/sprite.svg#twitter-ico"></use>
                                         </svg>
                                     </a>
                                 </li>

@@ -59,4 +59,7 @@ Route::get('/bots', function () {
     return view('bots-single-service');
 })->name("bots-singleservice");
 
+Route::get('/projects/fastoran', function () {
+    return view('projects.fastoran');
+})->name("fastoran");
 
