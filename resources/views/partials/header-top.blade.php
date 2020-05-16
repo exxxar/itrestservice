@@ -11,7 +11,7 @@
                 </li>
                 <li>
                     <b>24/7 Поддержка:</b>
-                    <a href="#!" class="formingHrefTel">+38 (071) 432-06-61</a>
+                    <a href="tel:+380713943435" class="formingHrefTel">+38 (071) 394-34-35</a>
                 </li>
             </ul><!-- Ennd header top info -->
         </div>
