@@ -1996,6 +1996,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2026,6 +2038,8 @@ __webpack_require__.r(__webpack_exports__);
         message: '',
         type: 1,
         need_domain_hosting: false,
+        need_crm: false,
+        need_email: false,
         domain_name: ''
       }
     };
@@ -29451,7 +29465,101 @@ var render = function() {
               })
             ])
           ])
-        : _vm._e()
+        : _vm._e(),
+      _vm._v(" "),
+      _c("label", { staticClass: "container" }, [
+        _vm._v("Мне понадобится отслеживать работу сайта через CRM"),
+        _c("span", { staticClass: "badge" }, [_vm._v("от 10000 ₽")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.need_crm,
+              expression: "form.need_crm"
+            }
+          ],
+          attrs: { type: "checkbox" },
+          domProps: {
+            checked: Array.isArray(_vm.form.need_crm)
+              ? _vm._i(_vm.form.need_crm, null) > -1
+              : _vm.form.need_crm
+          },
+          on: {
+            change: function($event) {
+              var $$a = _vm.form.need_crm,
+                $$el = $event.target,
+                $$c = $$el.checked ? true : false
+              if (Array.isArray($$a)) {
+                var $$v = null,
+                  $$i = _vm._i($$a, $$v)
+                if ($$el.checked) {
+                  $$i < 0 && _vm.$set(_vm.form, "need_crm", $$a.concat([$$v]))
+                } else {
+                  $$i > -1 &&
+                    _vm.$set(
+                      _vm.form,
+                      "need_crm",
+                      $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                    )
+                }
+              } else {
+                _vm.$set(_vm.form, "need_crm", $$c)
+              }
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("span", { staticClass: "checkmark" })
+      ]),
+      _vm._v(" "),
+      _c("label", { staticClass: "container" }, [
+        _vm._v("Создать корпоративную почту"),
+        _c("span", { staticClass: "badge" }, [_vm._v("от 1000 ₽")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.need_email,
+              expression: "form.need_email"
+            }
+          ],
+          attrs: { type: "checkbox" },
+          domProps: {
+            checked: Array.isArray(_vm.form.need_email)
+              ? _vm._i(_vm.form.need_email, null) > -1
+              : _vm.form.need_email
+          },
+          on: {
+            change: function($event) {
+              var $$a = _vm.form.need_email,
+                $$el = $event.target,
+                $$c = $$el.checked ? true : false
+              if (Array.isArray($$a)) {
+                var $$v = null,
+                  $$i = _vm._i($$a, $$v)
+                if ($$el.checked) {
+                  $$i < 0 && _vm.$set(_vm.form, "need_email", $$a.concat([$$v]))
+                } else {
+                  $$i > -1 &&
+                    _vm.$set(
+                      _vm.form,
+                      "need_email",
+                      $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                    )
+                }
+              } else {
+                _vm.$set(_vm.form, "need_email", $$c)
+              }
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("span", { staticClass: "checkmark" })
+      ])
     ]
   )
 }

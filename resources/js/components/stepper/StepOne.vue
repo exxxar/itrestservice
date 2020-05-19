@@ -44,6 +44,18 @@
             </div>
         </div>
 
+        <label class="container">Мне понадобится отслеживать работу сайта через CRM<span class="badge">от 10000 ₽</span>
+            <input type="checkbox"
+                   v-model="form.need_crm">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Создать корпоративную почту<span class="badge">от 1000 ₽</span>
+            <input type="checkbox"
+                   v-model="form.need_email">
+            <span class="checkmark"></span>
+        </label>
+
     </div>
 </template>
 
@@ -71,6 +83,8 @@
                     message: '',
                     type: 1,
                     need_domain_hosting:false,
+                    need_crm:false,
+                    need_email:false,
                     domain_name:''
                 }
             }
