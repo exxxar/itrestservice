@@ -68,6 +68,15 @@
             <span class="checkmark"></span>
         </label>
 
+        <div class="field" v-if="form.need_email">
+            <label class="label">Желаемое имя почты</label>
+            <div class="control">
+                <input :class="'input'" type="text"
+                       placeholder="Например, inbox"
+                       v-model="form.email_name">
+            </div>
+        </div>
+
     </div>
 </template>
 
@@ -99,7 +108,8 @@
                     need_email:false,
                     need_desing:false,
                     need_promo:false,
-                    domain_name:''
+                    domain_name:'',
+                    email_name:''
                 }
             }
         },

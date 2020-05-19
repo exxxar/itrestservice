@@ -2020,6 +2020,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2054,7 +2063,8 @@ __webpack_require__.r(__webpack_exports__);
         need_email: false,
         need_desing: false,
         need_promo: false,
-        domain_name: ''
+        domain_name: '',
+        email_name: ''
       }
     };
   },
@@ -29668,7 +29678,39 @@ var render = function() {
         }),
         _vm._v(" "),
         _c("span", { staticClass: "checkmark" })
-      ])
+      ]),
+      _vm._v(" "),
+      _vm.form.need_email
+        ? _c("div", { staticClass: "field" }, [
+            _c("label", { staticClass: "label" }, [
+              _vm._v("Желаемое имя почты")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "control" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.form.email_name,
+                    expression: "form.email_name"
+                  }
+                ],
+                class: "input",
+                attrs: { type: "text", placeholder: "Например, inbox" },
+                domProps: { value: _vm.form.email_name },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.form, "email_name", $event.target.value)
+                  }
+                }
+              })
+            ])
+          ])
+        : _vm._e()
     ]
   )
 }
