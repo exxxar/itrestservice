@@ -50,7 +50,7 @@
 
 <body>
 
-<main class="main">
+<main class="main" id="app">
 
     <div class="main-inner">
 
@@ -177,6 +177,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/script.min.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>

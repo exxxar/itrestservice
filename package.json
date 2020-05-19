@@ -18,5 +18,12 @@
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
         "vue-template-compiler": "^2.6.11"
+    },
+    "dependencies": {
+        "v-tooltip": "^2.0.3",
+        "vue": "^2.6.11",
+        "vue-stepper": "^1.4.2",
+        "vue-the-mask": "^0.11.1",
+        "vuelidate": "^0.7.5"
     }
 }

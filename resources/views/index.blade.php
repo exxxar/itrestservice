@@ -85,6 +85,7 @@
         </div>
     </div>
 
+    <it-order-calc></it-order-calc>
     @include("partials.services")
 
     @include("partials.why_choose_us")
