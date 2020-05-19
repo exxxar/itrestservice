@@ -50,6 +50,18 @@
             <span class="checkmark"></span>
         </label>
 
+        <label class="container">Мне понадобится дизайн<span class="badge">от 1000 ₽</span>
+            <input type="checkbox"
+                   v-model="form.need_desing">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Мне понадобится реклама<span class="badge">от 1000 ₽</span>
+            <input type="checkbox"
+                   v-model="form.need_promo">
+            <span class="checkmark"></span>
+        </label>
+
         <label class="container">Создать корпоративную почту<span class="badge">от 1000 ₽</span>
             <input type="checkbox"
                    v-model="form.need_email">
@@ -85,6 +97,8 @@
                     need_domain_hosting:false,
                     need_crm:false,
                     need_email:false,
+                    need_desing:false,
+                    need_promo:false,
                     domain_name:''
                 }
             }
