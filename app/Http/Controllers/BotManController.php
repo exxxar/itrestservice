@@ -27,16 +27,20 @@ class BotManController extends Controller
 
         Log::info("CONFIG");
 
-       /* DriverManager::loadDriver(TelegramDriver::class);*/
+        try {
+            DriverManager::loadDriver(TelegramDriver::class);
 
-        $this->botman = BotManFactory::create($this->config);
-        Log::info("CONFIG 2");
+            $this->botman = BotManFactory::create($this->config);
+            Log::info("CONFIG 2");
+        }catch (\Exception $e){
+            Log::info($e->getMessage());
+        }
 
-        $this->botman->listen();
+
     }
 
     public function index(){
-
+        $this->botman->listen();
 
         Log::info("TEST");
         $this->botman->hears('hello', function ($bot) {
