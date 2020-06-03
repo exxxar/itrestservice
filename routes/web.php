@@ -11,6 +11,11 @@
 |
 */
 
+
+use Illuminate\Http\Request;
+
+
+Route::get('/botman','BotManController@index');
 Route::get('/', function () {
     return view('index');
 })->name("index");
@@ -63,3 +68,19 @@ Route::get('/projects/fastoran', function () {
     return view('projects.fastoran');
 })->name("fastoran");
 
+Route::post('/check-free-domain', function (Request $request) {
+
+    $domain = $request->get("domain");
+
+    try {
+        $content = file_get_contents("http://api.whois.vu/?q=$domain&clean");
+        ini_set('max_execution_time', 60);
+
+
+    } catch (ErrorException $e) {
+        $content = [];
+    }
+
+    return response()
+        ->json(json_decode($content));
+});

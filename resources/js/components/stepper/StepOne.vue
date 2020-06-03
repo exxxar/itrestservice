@@ -34,14 +34,24 @@
             <input type="checkbox"
                    v-model="form.need_domain_hosting">
             <span class="checkmark"></span>
+
         </label>
         <div class="field" v-if="form.need_domain_hosting">
             <label class="label">Желаемое имя домена</label>
             <div class="control">
-                <input :class="'input'" type="text"
-                       placeholder="Например, example.com"
-                       v-model="form.domain_name">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 col-12">
+                        <input :class="'input'" type="text"
+                               placeholder="Например, example.com"
+                               @blur="$v.form.domain_name.$touch" v-model.lazy="form.domain_name"></div>
+                    <div class="col-md-4 col-sm-12 col-12">
+                        <button class="btn btn-info">Проверить</button>
+                    </div>
+                </div>
+
+
             </div>
+            <p v-if="$v.form.domain_name.$error" class="help is-danger">Данный домен уже занят</p>
         </div>
 
         <label class="container">Мне понадобится отслеживать работу сайта через CRM<span class="badge">от 10000 ₽</span>
@@ -52,7 +62,7 @@
 
         <label class="container">Мне понадобится дизайн<span class="badge">от 1000 ₽</span>
             <input type="checkbox"
-                   v-model="form.need_desing">
+                   v-model="form.need_design">
             <span class="checkmark"></span>
         </label>
 
@@ -103,13 +113,13 @@
                     phone: '',
                     message: '',
                     type: 1,
-                    need_domain_hosting:false,
-                    need_crm:false,
-                    need_email:false,
-                    need_desing:false,
-                    need_promo:false,
-                    domain_name:'',
-                    email_name:''
+                    need_domain_hosting: false,
+                    need_crm: false,
+                    need_email: false,
+                    need_design: false,
+                    need_promo: false,
+                    domain_name: '',
+                    email_name: ''
                 }
             }
         },
@@ -123,12 +133,34 @@
                 },
                 type: {
                     required
+                },
+                domain_name: {
+                    isFree(domain) {
+
+                        if (!this.form.need_domain_hosting)
+                            return true;
+
+                        return axios.post('/check-free-domain', {
+                            domain: domain
+                        })
+                            .then(res => {
+                                return res.data.available === "yes"; //res.data has to return true or false after checking if the username exists in DB
+                            })
+                    }
                 }
+            }
+        },
+        computed: {
+            params() {
+                return this.$store.getters.getParams;
             }
         },
         watch: {
             $v: {
                 handler: function (val) {
+
+                    this.$store.dispatch("setParams", this.form)
+
                     if (!val.$invalid) {
                         this.$emit('can-continue', {value: true});
                     } else {
@@ -141,11 +173,11 @@
                 deep: true
             },
             clickedNext(val) {
-                console.log(val);
+
                 if (val === true) {
                     this.$v.form.$touch();
                 }
-            }
+            },
         },
         mounted() {
             if (!this.$v.$invalid) {
@@ -153,6 +185,13 @@
             } else {
                 this.$emit('can-continue', {value: false});
             }
+        },
+        activated() {
+            this.form.need_design = this.params.need_design
+            this.form.need_promo = this.params.need_promo
+        },
+        methods:{
+
         }
     }
 </script>

@@ -5,7 +5,7 @@
             <label class="label">Выбор типа бота</label>
             <div class="control">
                 <select :class="'input'" v-model="form.bot_type">
-                    <option v-for="item in telegram_bot_type" :value="item.id">{{item.title}} ({{item.price}} ₽)
+                    <option v-for="item in telegram_bot_type" :value="item.id">{{item.title}}<!-- ({{item.price}} ₽)-->
                     </option>
                 </select>
             </div>
@@ -14,8 +14,8 @@
         <div class="row mt-2">
             <div class="col-md-6 col-sm-12 col-12 col-lg-6 td" v-for="(tls, index) in telegram_loyalty_system">
 
-                <label class="container" v-tooltip="tls.description">{{tls.title}}<span
-                    class="badge">{{tls.price}} ₽</span>
+                <label class="container" v-tooltip="tls.description">{{tls.title}}<!--<span
+                    class="badge">{{tls.price}} ₽</span>-->
                     <input type="checkbox"
                            :value="tls.id" v-model="form.loyalty_system_type">
                     <span class="checkmark"></span>
@@ -28,7 +28,7 @@
         <div class="row mt-2">
             <div class="col-md-6 col-sm-12 col-12 col-lg-6 td" v-for="(lpt, index) in landing_page_type">
 
-                <label class="container">{{lpt.title}}<span class="badge">{{lpt.price}} ₽</span>
+                <label class="container">{{lpt.title}}<!--<span class="badge">{{lpt.price}} ₽</span>-->
                     <input type="checkbox"
                            :value="lpt.id" v-model="form.landing_page_type">
                     <span class="checkmark"></span>
@@ -38,11 +38,11 @@
 
         </div>
         <h3>Настройка рекламы</h3>
-        <div class="row mt-2">
+        <div class="row mt-2" v-if="params.need_promo">
             <div class="col-md-6 col-sm-12 col-12 col-lg-6 td" v-for="(pt, index) in promotion_type">
 
-                <label class="container" v-tooltip="pt.description">{{pt.title}}<span
-                    class="badge">{{pt.price}} ₽</span>
+                <label class="container" v-tooltip="pt.description">{{pt.title}}<!--<span
+                    class="badge">{{pt.price}} ₽</span>-->
                     <input type="checkbox"
                            :value="pt.id" v-model="form.promotion_type">
                     <span class="checkmark"></span>
@@ -51,12 +51,23 @@
             </div>
 
         </div>
+        <div class="row mt-2" v-if="!params.need_promo">
+            <div class="col-12">
+                <p>Вы отказались от рекламы...</p>
+                <label class="container">Всё же хочу рекламу!
+                    <input type="checkbox"
+                           :value="false" v-model="need_promo">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+
         <h3>Разработка дизайна</h3>
-        <div class="row mt-2">
+        <div class="row mt-2" v-if="params.need_design">
             <div class="col-md-6 col-sm-12 col-12 col-lg-6 td" v-for="(dt, index) in design_type">
 
-                <label class="container" v-tooltip="dt.description">{{dt.title}}<span
-                    class="badge">{{dt.price}} ₽</span>
+                <label class="container" v-tooltip="dt.description">{{dt.title}}<!--<span
+                    class="badge">{{dt.price}} ₽</span>-->
                     <input type="checkbox"
                            :value="dt.id" v-model="form.design_type">
                     <span class="checkmark"></span>
@@ -65,12 +76,23 @@
             </div>
 
         </div>
-        <h3>SMM</h3>
-        <div class="row mt-2">
+        <div class="row mt-2" v-if="!params.need_design">
+            <div class="col-12">
+                <p>Вы отказались от дизайна...</p>
+                <label class="container">Всё же хочу дизайн!
+                    <input type="checkbox"
+                           :value="false" v-model="need_design">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+
+        <h3 v-if="params.need_promo">SMM</h3>
+        <div class="row mt-2" v-if="params.need_promo">
             <div class="col-md-6 col-sm-12 col-12 col-lg-6 td" v-for="(st, index) in smm_type">
 
-                <label class="container" v-tooltip="st.description">{{st.title}}<span
-                    class="badge">{{st.price}} ₽</span>
+                <label class="container" v-tooltip="st.description">{{st.title}}<!--<span
+                    class="badge">{{st.price}} ₽</span>-->
                     <input type="checkbox"
                            :value="st.id" v-model="form.smm_type">
                     <span class="checkmark"></span>
@@ -142,6 +164,8 @@
                     {id: 4, title: "Съемка рекламных роликов", price: 1000, description: "Test"},
 
                 ],
+                need_design: false,
+                need_promo: false,
                 form: {
                     bot_type: 1,
                     has_loyalty_system: false,
@@ -157,8 +181,31 @@
                 }
             }
         },
+        watch: {
+            need_design: function (val) {
+                this.params.need_design = val
+                this.$store.dispatch("setParams", this.params)
+            },
+            need_promo: function (val) {
+                this.params.need_promo = val
+                this.$store.dispatch("setParams", this.params)
+            }
 
+        },
+        computed: {
+            params() {
+                return this.$store.getters.getParams;
+            }
+        },
+        activated() {
+
+            this.need_design = this.params.need_design
+            this.need_promo = this.params.need_promo
+            this.$emit('can-continue', {value: true});
+        },
         mounted() {
+            this.need_design = this.params.need_design
+            this.need_promo = this.params.need_promo
             this.$emit('can-continue', {value: true});
         }
 

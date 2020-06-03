@@ -27,7 +27,7 @@
         components: {
             HorizontalStepper
         },
-        data(){
+        data() {
             return {
                 demoSteps: [
                     {
@@ -49,7 +49,7 @@
 
                     },
                     {
-                       // icon: 'report_problem',
+                        // icon: 'report_problem',
                         name: 'third',
                         title: 'Шаг 3',
                         subtitle: 'Оформление заявки',
@@ -72,7 +72,7 @@
             isStepActive(payload) {
                 this.demoSteps.forEach((step) => {
                     if (step.name === payload.name) {
-                        if(step.completed === true) {
+                        if (step.completed === true) {
                             step.completed = false;
                         }
                     }
@@ -86,9 +86,9 @@
     }
 </script>
 
-<style lang="scss" >
+<style lang="scss">
     .stepper-box .top .steps-wrapper .step .circle i {
-        background-color:#8d3e9e !important;
+        background-color: #8d3e9e !important;
         border-radius: 5px !important;
         display: table !important;
     }
@@ -181,7 +181,7 @@
     }
 
     span.badge {
-        font-size: 8px;
+        font-size: 12px;
         background: #8d3e9e;
         padding: 5px;
         position: relative;
@@ -189,6 +189,9 @@
         color: white;
     }
 
+    p.help.is-danger {
+        color: red;
+    }
 
     .tooltip {
         display: block !important;

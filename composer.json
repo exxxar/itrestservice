@@ -9,6 +9,8 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "botman/botman": "^2.6",
+        "botman/driver-telegram": "^1.5",
         "fideloper/proxy": "^4.0",
         "grkamil/laravel-telegram-logging": "^1.2",
         "laravel-notification-channels/telegram": "^0.2.0",
