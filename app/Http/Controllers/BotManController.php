@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use BotMan\BotMan\BotMan;
 use BotMan\BotMan\BotManFactory;
 use BotMan\BotMan\Drivers\DriverManager;
+use Illuminate\Support\Facades\Log;
 
 
 class BotManController extends Controller
@@ -24,6 +25,8 @@ class BotManController extends Controller
             ]
         ];
 
+        Log::info("CONFIG");
+
         DriverManager::loadDriver(TelegramDriver::class);
 
         $this->botman = BotManFactory::create($this->config);
@@ -32,7 +35,11 @@ class BotManController extends Controller
     public function index(){
         $this->botman->listen();
 
-        $this->botman->hears('hello', function (BotMan $bot) {
+        Log::info("TEST");
+        $this->botman->hears('hello', function ($bot) {
+
+            Log::info("HELLO");
+
             $bot->reply('Hello yourself.');
         });
     }
