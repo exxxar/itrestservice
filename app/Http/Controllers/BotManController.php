@@ -26,8 +26,7 @@ class BotManController extends Controller
 
         $update = json_decode($telegram->getWebhookUpdate());
 
-        dd($update);
-        if (is_null($update) )
+        if (empty($update) )
             return;
 
         if (isset($update->channel_post))
