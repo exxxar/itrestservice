@@ -16,8 +16,12 @@ class BotManController extends Controller
 
 
     public function index(Request $request){
+        Log::info("BotManController@index");
+
         $telegram = new Api(env("TELEGRAM_BOT_TOKEN"));
         $response = $telegram->getMe();
+
+        Log::info("step 2");
 
         $update = json_decode($telegram->getWebhookUpdate());
 
