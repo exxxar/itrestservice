@@ -15,7 +15,8 @@
 use Illuminate\Http\Request;
 
 
-Route::any('/botman','BotManController@index');
+Route::any('/bot','BotManController@index');
+
 Route::get('/', function () {
     return view('index');
 })->name("index");

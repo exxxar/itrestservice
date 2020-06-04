@@ -8,47 +8,53 @@ use BotMan\BotMan\BotMan;
 use BotMan\BotMan\BotManFactory;
 use BotMan\BotMan\Drivers\DriverManager;
 use Illuminate\Support\Facades\Log;
+use Telegram\Bot\Api;
 
 
 class BotManController extends Controller
 {
-    //
-    private $config;
-    private $botman;
 
 
-    public function __construct()
-    {
-        $this->config = [
-            "telegram" => [
-                "token" => env("TELEGRAM_BOT_TOKEN")
-            ]
-        ];
+    public function index(Request $request){
+        $telegram = new Api(env("TELEGRAM_BOT_TOKEN"));
+        $response = $telegram->getMe();
 
-        Log::info("CONFIG");
+        $update = json_decode($telegram->getWebhookUpdate());
+
+        if (isset($update->channel_post))
+            return;
+
+
+        $postdata = http_build_query(
+            array(
+                'message_id' => $update->message->message_id??$update->callback_query->message->message_id,
+                'user' => json_encode([
+                    "id" => $update->message->from->id ?? $update->callback_query->from->id,
+                    "first_name" => $update->message->from->first_name ?? $update->callback_query->from->first_name?? '',
+                    "last_name" => $update->message->from->last_name ?? $update->callback_query->from->last_name ?? '',
+                    "username" => $update->message->from->username ?? $update->callback_query->from->username ?? '',
+                ]),
+                'bot_name' => env("MY_BOT_NAME"),
+                'query' => $update->message->text??$update->callback_query->data
+            )
+        );
+
+        $opts = array('http' =>
+            array(
+                'method' => 'POST',
+                'header' => 'Content-Type: application/x-www-form-urlencoded',
+                'content' => $postdata
+            )
+        );
+
+        $context = stream_context_create($opts);
 
         try {
-            DriverManager::loadDriver(TelegramDriver::class);
-
-            $this->botman = BotManFactory::create($this->config);
-            Log::info("CONFIG 2");
-        }catch (\Exception $e){
-            Log::info($e->getMessage());
+            $result = file_get_contents('http://skidka-service.ru/api/v1/methods', false, $context);
         }
+        catch (\Exception $e){
 
-
-    }
-
-    public function index(){
-        $this->botman->listen();
-
-        Log::info("TEST");
-        $this->botman->hears('hello', function ($bot) {
-
-            Log::info("HELLO");
-
-            $bot->reply('Hello yourself.');
-        });
+        }
     }
 
 

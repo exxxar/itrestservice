@@ -13,6 +13,7 @@
         "botman/driver-telegram": "^1.5",
         "fideloper/proxy": "^4.0",
         "grkamil/laravel-telegram-logging": "^1.2",
+        "irazasyed/telegram-bot-sdk": "^3.1",
         "laravel-notification-channels/telegram": "^0.2.0",
         "laravel/framework": "^6.2",
         "laravel/passport": "^8.4",
