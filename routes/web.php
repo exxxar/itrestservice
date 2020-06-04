@@ -15,7 +15,7 @@
 use Illuminate\Http\Request;
 
 
-Route::any('/botman','BotManController@index');
+Route::match(['get', 'post'], '/botman', 'BotManController@getWebhookUpdates');
 
 Route::get('/', function () {
     return view('index');

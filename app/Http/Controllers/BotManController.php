@@ -15,7 +15,7 @@ class BotManController extends Controller
 {
 
 
-    public function index(Request $request)
+    public function getWebhookUpdates(Request $request)
     {
         Log::info("BotManController@index");
 
