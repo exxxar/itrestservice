@@ -15,7 +15,8 @@ class BotManController extends Controller
 {
 
 
-    public function index(Request $request){
+    public function index(Request $request)
+    {
         Log::info("BotManController@index");
 
         $telegram = new Api(env("TELEGRAM_BOT_TOKEN"));
@@ -28,18 +29,20 @@ class BotManController extends Controller
         if (isset($update->channel_post))
             return;
 
+        if (is_null($update->message) && is_null($update->callback_query))
+            return;
 
         $postdata = http_build_query(
             array(
-                'message_id' => $update->message->message_id??$update->callback_query->message->message_id,
+                'message_id' => $update->message->message_id ?? $update->callback_query->message->message_id,
                 'user' => json_encode([
                     "id" => $update->message->from->id ?? $update->callback_query->from->id,
-                    "first_name" => $update->message->from->first_name ?? $update->callback_query->from->first_name?? '',
+                    "first_name" => $update->message->from->first_name ?? $update->callback_query->from->first_name ?? '',
                     "last_name" => $update->message->from->last_name ?? $update->callback_query->from->last_name ?? '',
                     "username" => $update->message->from->username ?? $update->callback_query->from->username ?? '',
                 ]),
                 'bot_name' => env("MY_BOT_NAME"),
-                'query' => $update->message->text??$update->callback_query->data
+                'query' => $update->message->text ?? $update->callback_query->data
             )
         );
 
@@ -55,8 +58,7 @@ class BotManController extends Controller
 
         try {
             $result = file_get_contents('http://skidka-service.ru/api/v1/methods', false, $context);
-        }
-        catch (\Exception $e){
+        } catch (\Exception $e) {
 
         }
     }
