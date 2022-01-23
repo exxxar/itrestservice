@@ -83,8 +83,8 @@
                         <!-- Begin company info -->
                         <div class="footer-company-info">
                             <div class="footer-company-top">
-                                <a href="/" class="logo logo-ico-widht-text footer-logo" title="IT Rest Service">
-                                    <img class="lazy logo-ico" src="/img/logo.png" alt="" style="">
+                                <a href="/" class="logo logo-ico-widht-text" title="IT Rest Service">
+                                    <img class="lazy logo-ico" src="/logo_it.png" alt="" style="">
                                 </a>
                                 <div class="footer-company-desc">
                                     <p>Мы собрали штат высокоэффективных сотрудников, которые могут реализовать
@@ -133,7 +133,7 @@
             <div class="container">
                 <div class="row justify-content-between items">
                     <div class="col-12 item">
-                        <div class="copyright">© 2020 It Rest Service. All rights reserved.</div>
+                        <div class="copyright">© 2022 It Rest Service. All rights reserved.</div>
                     </div>
                 </div>
             </div>

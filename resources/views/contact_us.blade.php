@@ -38,21 +38,21 @@
                                 <i class="material-icons md-22">location_on</i>
                                 <div class="footer-contact-info">
                                     <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+50-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F+%D0%A1%D0%A1%D0%A1%D0%A0,+144%2F3,+%D0%94%D0%BE%D0%BD%D0%B5%D1%86%D0%BA,+%D0%94%D0%BE%D0%BD%D0%B5%D1%86%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+83000/@48.0074449,37.8093354,17z/data=!3m1!4b1!4m5!3m4!1s0x40e09045c72a4a63:0xac96c5ea5806bb2e!8m2!3d48.0074449!4d37.8115241">
-                                        г. Донецк, ул. 50-летия СССР, 144/3
+                                        г. Донецк, пр. Театральный, 13
                                     </a>
                                 </div>
                             </li>
                             <li>
                                 <i class="material-icons md-22 footer-contact-tel">smartphone</i>
                                 <div class="footer-contact-info">
-                                    <a href="tel:+38071432-06-61" class="formingHrefTel">+38 (071) 432-06-61</a>
+                                    <a href="tel:+38071432-06-61" class="formingHrefTel">+38 (071) 300-77-56</a>
 {{--                                    <a href="tel:+13238884554" class="formingHrefTel">+1 323-888-4554</a>--}}
                                 </div>
                             </li>
                             <li>
                                 <i class="material-icons md-22 footer-contact-email">email</i>
                                 <div class="footer-contact-info">
-                                    <a href="mailto:mail@example.com">business@it-rest-service.ru</a>
+                                    <a href="mailto:mail@example.com">dev@donbass.it</a>
 {{--                                    <a href="mailto:info@example.com">info@example.com</a>--}}
                                 </div>
                             </li>

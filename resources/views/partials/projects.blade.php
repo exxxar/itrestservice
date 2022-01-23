@@ -10,6 +10,94 @@
             </div>
         </div>
         <div class="project-carusel" data-flickity='{ "imagesLoaded": true, "pageDots": false, "lazyLoad": true, "lazyLoad": 10, "groupCells": true, "contain": true, "contain": true, "prevNextButtons": true }'>
+
+            <div class="project-col project-col-carusel project-ux-design">
+                <!-- Begin project item -->
+                <div class="project-item">
+                    <div class="project-item-card project-item-card-front">
+                        <img src="/img/salero.jpg" class="lazy" alt="">
+                    </div>
+                    <div class="project-item-card project-item-card-back">
+                        <div class="project-item-card-center">
+                            <h5 class="project-item-title">Аналитика</h5>
+                            <div class="project-item-desc">
+                                <p>Сайт аналитики продаж н платформе Wildberries</p>
+                            </div>
+                        <!--                            <div class="wrapp-btn-circl-arrow justify-content-center">
+                                <a href="{{route('fastoran')}}" class="btn-circl-arrow btn-circl-arrow-white">
+                                    <svg viewBox="0 0 13 9" width="13px" height="9px"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
+                                </a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div><!-- End project item -->
+            </div>
+
+            <div class="project-col project-col-carusel project-ux-design">
+                <!-- Begin project item -->
+                <div class="project-item">
+                    <div class="project-item-card project-item-card-front">
+                        <img src="/img/sale_bot.jpg" class="lazy" alt="">
+                    </div>
+                    <div class="project-item-card project-item-card-back">
+                        <div class="project-item-card-center">
+                            <h5 class="project-item-title">Бот скидок</h5>
+                            <div class="project-item-desc">
+                                <p>Скидочная система под ключ</p>
+                            </div>
+                        <!--                            <div class="wrapp-btn-circl-arrow justify-content-center">
+                                <a href="{{route('fastoran')}}" class="btn-circl-arrow btn-circl-arrow-white">
+                                    <svg viewBox="0 0 13 9" width="13px" height="9px"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
+                                </a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div><!-- End project item -->
+            </div>
+
+            <div class="project-col project-col-carusel project-ux-design">
+                <!-- Begin project item -->
+                <div class="project-item">
+                    <div class="project-item-card project-item-card-front">
+                        <img src="/img/reutov.jpg" class="lazy" alt="">
+                    </div>
+                    <div class="project-item-card project-item-card-back">
+                        <div class="project-item-card-center">
+                            <h5 class="project-item-title">Доктор Реутов</h5>
+                            <div class="project-item-desc">
+                                <p>Обучающий сайт нейрохерурга доктора Реутова</p>
+                            </div>
+                        <!--                            <div class="wrapp-btn-circl-arrow justify-content-center">
+                                <a href="{{route('fastoran')}}" class="btn-circl-arrow btn-circl-arrow-white">
+                                    <svg viewBox="0 0 13 9" width="13px" height="9px"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
+                                </a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div><!-- End project item -->
+            </div>
+            <div class="project-col project-col-carusel project-ux-design">
+                <!-- Begin project item -->
+                <div class="project-item">
+                    <div class="project-item-card project-item-card-front">
+                        <img src="/img/steel_skin.jpg" class="lazy" alt="">
+                    </div>
+                    <div class="project-item-card project-item-card-back">
+                        <div class="project-item-card-center">
+                            <h5 class="project-item-title">Steel Skin</h5>
+                            <div class="project-item-desc">
+                                <p>Магазин продажи плоттеров и аксессуаров к ним</p>
+                            </div>
+<!--                            <div class="wrapp-btn-circl-arrow justify-content-center">
+                                <a href="{{route('fastoran')}}" class="btn-circl-arrow btn-circl-arrow-white">
+                                    <svg viewBox="0 0 13 9" width="13px" height="9px"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
+                                </a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div><!-- End project item -->
+            </div>
+
             <div class="project-col project-col-carusel project-ux-design">
                 <!-- Begin project item -->
                 <div class="project-item">
