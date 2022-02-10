@@ -85,3 +85,8 @@ Route::post('/check-free-domain', function (Request $request) {
     return response()
         ->json(json_decode($content));
 });
+
+
+Route::post('/payments/freekassa/notify','PaymentController@notify');
+Route::post('/payments/freekassa/success','PaymentController@success');
+Route::post('/payments/freekassa/failure','PaymentController@failure');
