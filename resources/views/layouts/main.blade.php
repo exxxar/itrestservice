@@ -135,6 +135,11 @@
                     <div class="col-12 item">
                         <div class="copyright">© 2022 It Rest Service. All rights reserved.</div>
                     </div>
+                    <div class="col-12 item">
+                        <a href="https://freekassa.ru" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn.freekassa.ru/banners/big-dark-1.png" title="Прием платежей">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

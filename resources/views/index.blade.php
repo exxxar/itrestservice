@@ -51,6 +51,7 @@
                                         <span>Заказать</span>
                                         <svg class="btn-widht-ico-right" viewBox="0 0 13 9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
                                     </a>
+
                                 </div>
                             </div>
                         </div>
