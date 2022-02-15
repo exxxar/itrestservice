@@ -6,7 +6,7 @@
     <meta charset="utf-8">
 
     <title>@yield('title')</title>
-
+    <meta name="yandex-verification" content="7f64b90a5d910815" />
     <meta name="description" content="Description">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
